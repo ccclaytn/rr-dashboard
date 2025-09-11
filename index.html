@@ -152,12 +152,11 @@
 <body>
     <header>
         <h1>Radiographer Reject Rate Analysis</h1>
-        <p>Analyze image reject rates and trends by radiographer</p>
     </header>
 
     <div class="input-section">
         <h2>Enter Radiographer Initials</h2>
-        <input type="text" id="techIdInput" placeholder="e.g., AAJ" maxlength="3">
+        <input type="text" id="techIdInput" placeholder="e.g., BYT" maxlength="3">
         <button id="fetchDataBtn">Fetch Data</button>
     </div>
 
@@ -524,19 +523,39 @@
             createRejectReasonTable(monthData);
         }
         
-        // Create body part chart (regions imaged)
+        // Create body part chart as a pie chart
         function createBodyPartChart(data) {
-            const bodyPartCounts = {};
+            const bodyPartStats = {};
             
+            // Initialize counts for each body part
             data.forEach(item => {
                 const bodyPart = item['Body Part'];
-                bodyPartCounts[bodyPart] = (bodyPartCounts[bodyPart] || 0) + 1;
+                if (!bodyPartStats[bodyPart]) {
+                    bodyPartStats[bodyPart] = { total: 0, rejected: 0 };
+                }
+                
+                bodyPartStats[bodyPart].total += 1;
+                if (item['Reject Category'] && item['Reject Category'].trim() !== '') {
+                    bodyPartStats[bodyPart].rejected += 1;
+                }
             });
             
-            // Sort by count descending
-            const sortedBodyParts = Object.entries(bodyPartCounts)
-                .sort((a, b) => b[1] - a[1])
-                .slice(0, 10); // Top 10 only
+            // Calculate reject rates and prepare data for chart
+            const bodyPartData = [];
+            for (const [bodyPart, stats] of Object.entries(bodyPartStats)) {
+                const rejectRate = stats.total > 0 ? (stats.rejected / stats.total) * 100 : 0;
+                bodyPartData.push({ 
+                    bodyPart, 
+                    total: stats.total, 
+                    rejected: stats.rejected, 
+                    rejectRate 
+                });
+            }
+            
+            // Sort by total descending and take top 10
+            const topBodyParts = bodyPartData
+                .sort((a, b) => b.total - a.total)
+                .slice(0, 10);
             
             const ctx = document.getElementById('bodyPartChart').getContext('2d');
             
@@ -544,27 +563,57 @@
                 bodyPartChart.destroy();
             }
             
+            // Generate a color palette
+            const generateColors = (count) => {
+                const colors = [
+                    'rgba(52, 152, 219, 0.7)',   // Blue
+                    'rgba(46, 204, 113, 0.7)',   // Green
+                    'rgba(155, 89, 182, 0.7)',   // Purple
+                    'rgba(241, 196, 15, 0.7)',   // Yellow
+                    'rgba(230, 126, 34, 0.7)',   // Orange
+                    'rgba(231, 76, 60, 0.7)',    // Red
+                    'rgba(149, 165, 166, 0.7)',  // Gray
+                    'rgba(26, 188, 156, 0.7)',   // Turquoise
+                    'rgba(241, 148, 138, 0.7)',  // Light Red
+                    'rgba(174, 168, 211, 0.7)'   // Light Purple
+                ];
+                return colors.slice(0, count);
+            };
+            
             bodyPartChart = new Chart(ctx, {
-                type: 'bar',
+                type: 'pie',
                 data: {
-                    labels: sortedBodyParts.map(item => item[0]),
+                    labels: topBodyParts.map(item => item.bodyPart),
                     datasets: [{
-                        label: 'Number of Images',
-                        data: sortedBodyParts.map(item => item[1]),
-                        backgroundColor: 'rgba(52, 152, 219, 0.7)',
-                        borderColor: 'rgba(52, 152, 219, 1)',
+                        data: topBodyParts.map(item => item.total),
+                        backgroundColor: generateColors(topBodyParts.length),
+                        borderColor: topBodyParts.map((_, i) => generateColors(topBodyParts.length)[i].replace('0.7', '1')),
                         borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
-                    indexAxis: 'y', // Horizontal bar chart
-                    scales: {
-                        x: {
-                            beginAtZero: true,
-                            title: {
-                                display: true,
-                                text: 'Number of Images'
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const bodyPart = topBodyParts[context.dataIndex];
+                                    return [
+                                        `Body Part: ${bodyPart.bodyPart}`,
+                                        `Total Images: ${bodyPart.total}`,
+                                        `Rejected Images: ${bodyPart.rejected}`,
+                                        `Reject Rate: ${bodyPart.rejectRate.toFixed(1)}%`
+                                    ];
+                                }
+                            }
+                        },
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                boxWidth: 15,
+                                font: {
+                                    size: 11
+                                }
                             }
                         }
                     }
