@@ -118,13 +118,6 @@
             padding: 20px;
             color: #7f8c8d;
         }
-        .config-note {
-            background-color: #fff8e1;
-            padding: 15px;
-            border-radius: 8px;
-            margin-top: 20px;
-            border-left: 4px solid #ffc107;
-        }
         .legend-item {
             display: flex;
             align-items: center;
@@ -154,12 +147,6 @@
         <h2>Enter Radiographer Initials</h2>
         <input type="text" id="techIdInput" placeholder="e.g., AAJ" maxlength="3">
         <button id="fetchDataBtn">Fetch Data</button>
-        
-        <div class="config-note">
-            <h3>Configuration Note</h3>
-            <p>To add new months, update the <code>availableMonths</code> array in the JavaScript code with the new month's data.</p>
-            <p>Current available months: <span id="availableMonthsList"></span></p>
-        </div>
     </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
@@ -206,10 +193,6 @@
             // Add new months here in the format:
             // { id: 'MMM-YYYY', name: 'Month YYYY', fileName: 'MMM-YYYY.json' },
         ];
-
-        // Display available months in the config note
-        document.getElementById('availableMonthsList').textContent = 
-            availableMonths.map(m => m.name).join(', ');
 
         // Global variables
         let monthlyData = {};
@@ -346,6 +329,7 @@
             const labels = availableMonths.map(month => month.name);
             const totalImagesData = availableMonths.map(month => monthlyStats[month.id].totalImages);
             const rejectRateData = availableMonths.map(month => monthlyStats[month.id].rejectRate);
+            const rejectedImagesData = availableMonths.map(month => monthlyStats[month.id].rejectedImages);
             
             // Calculate dynamic scaling for y-axes
             const maxTotalImages = Math.max(...totalImagesData);
@@ -402,6 +386,11 @@
                                         label += context.parsed.y.toFixed(1) + '%';
                                     }
                                     return label;
+                                },
+                                afterLabel: function(context) {
+                                    // Add total rejects to the tooltip
+                                    const dataIndex = context.dataIndex;
+                                    return `Total Rejects: ${rejectedImagesData[dataIndex]}`;
                                 }
                             }
                         },
@@ -584,7 +573,8 @@
                 .map(([bodyPart, stats]) => ({
                     bodyPart,
                     rejectRate: (stats.rejected / stats.total) * 100,
-                    totalImages: stats.total
+                    totalImages: stats.total,
+                    rejectedImages: stats.rejected
                 }))
                 .sort((a, b) => b.rejectRate - a.rejectRate)
                 .slice(0, 10); // Top 10 only
@@ -635,7 +625,8 @@
                                     const bodyPart = rejectRates[context.dataIndex];
                                     return [
                                         `Reject Rate: ${bodyPart.rejectRate.toFixed(1)}%`,
-                                        `Total Images: ${bodyPart.totalImages}`
+                                        `Total Images: ${bodyPart.totalImages}`,
+                                        `Total Rejects: ${bodyPart.rejectedImages}`
                                     ];
                                 }
                             }
