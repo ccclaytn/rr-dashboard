@@ -117,6 +117,44 @@
             padding: 20px;
             color: #7f8c8d;
         }
+        .trend-chart-container {
+            position: relative;
+            height: 400px;
+        }
+        .chart-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+            padding: 15px;
+            background-color: #f8f9fa;
+            border-radius: 6px;
+        }
+        .stat-item {
+            text-align: center;
+        }
+        .stat-value {
+            font-size: 24px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        .stat-label {
+            font-size: 12px;
+            color: #7f8c8d;
+            text-transform: uppercase;
+        }
+        .trend-indicator {
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .trend-up {
+            color: #e74c3c;
+        }
+        .trend-down {
+            color: #27ae60;
+        }
+        .trend-stable {
+            color: #f39c12;
+        }
     </style>
 </head>
 <body>
@@ -140,7 +178,12 @@
     <div id="resultsContainer" style="display: none;">
         <div class="chart-container">
             <h2>Reject Rate Trend</h2>
-            <canvas id="trendChart"></canvas>
+            <div class="trend-chart-container">
+                <canvas id="trendChart"></canvas>
+            </div>
+            <div class="chart-stats" id="trendStats">
+                <!-- Stats will be populated here -->
+            </div>
         </div>
 
         <div class="month-tabs" id="monthTabs">
@@ -181,6 +224,7 @@
         const bodyPartTitle = document.getElementById('bodyPartTitle');
         const rejectRateTitle = document.getElementById('rejectRateTitle');
         const rejectReasonTitle = document.getElementById('rejectReasonTitle');
+        const trendStats = document.getElementById('trendStats');
         
         // Chart instances
         let trendChart = null;
@@ -243,7 +287,7 @@
             const juneRejectRate = calculateRejectRate(juneData);
             
             // Create trend chart
-            createTrendChart(mayRejectRate, juneRejectRate);
+            createTrendChart(mayRejectRate, juneRejectRate, mayData.length, juneData.length);
             
             // Create month tabs
             createMonthTabs();
@@ -265,43 +309,175 @@
             return (rejectedImages / totalImages) * 100;
         }
         
-        // Create trend chart
-        function createTrendChart(mayRate, juneRate) {
+        // Create enhanced trend chart with line + bar combination
+        function createTrendChart(mayRate, juneRate, mayTotal, juneTotal) {
             const ctx = document.getElementById('trendChart').getContext('2d');
             
             if (trendChart) {
                 trendChart.destroy();
             }
             
+            // Calculate dynamic scale
+            const maxRate = Math.max(mayRate, juneRate);
+            const yAxisMax = maxRate === 0 ? 10 : Math.ceil(maxRate * 1.2);
+            
             trendChart = new Chart(ctx, {
-                type: 'line',
+                type: 'bar',
                 data: {
                     labels: ['May 2025', 'June 2025'],
-                    datasets: [{
-                        label: 'Reject Rate (%)',
-                        data: [mayRate, juneRate],
-                        backgroundColor: 'rgba(52, 152, 219, 0.2)',
-                        borderColor: 'rgba(52, 152, 219, 1)',
-                        borderWidth: 2,
-                        pointBackgroundColor: 'rgba(52, 152, 219, 1)',
-                        pointRadius: 5,
-                        tension: 0.1
-                    }]
+                    datasets: [
+                        {
+                            label: 'Reject Rate (%)',
+                            type: 'bar',
+                            data: [mayRate, juneRate],
+                            backgroundColor: [
+                                'rgba(52, 152, 219, 0.6)',
+                                'rgba(155, 89, 182, 0.6)'
+                            ],
+                            borderColor: [
+                                'rgba(52, 152, 219, 1)',
+                                'rgba(155, 89, 182, 1)'
+                            ],
+                            borderWidth: 2,
+                            borderRadius: 8,
+                            borderSkipped: false,
+                        },
+                        {
+                            label: 'Trend Line',
+                            type: 'line',
+                            data: [mayRate, juneRate],
+                            backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                            borderColor: 'rgba(231, 76, 60, 1)',
+                            borderWidth: 3,
+                            pointBackgroundColor: 'rgba(231, 76, 60, 1)',
+                            pointBorderColor: '#fff',
+                            pointBorderWidth: 2,
+                            pointRadius: 8,
+                            pointHoverRadius: 10,
+                            tension: 0.2,
+                            fill: false
+                        }
+                    ]
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {
+                        intersect: false,
+                        mode: 'index'
+                    },
+                    plugins: {
+                        legend: {
+                            display: true,
+                            position: 'top',
+                            labels: {
+                                usePointStyle: true,
+                                padding: 20
+                            }
+                        },
+                        tooltip: {
+                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                            titleColor: '#fff',
+                            bodyColor: '#fff',
+                            borderColor: 'rgba(255, 255, 255, 0.1)',
+                            borderWidth: 1,
+                            callbacks: {
+                                afterBody: function(tooltipItems) {
+                                    const index = tooltipItems[0].dataIndex;
+                                    const total = index === 0 ? mayTotal : juneTotal;
+                                    return `Total Images: ${total}`;
+                                }
+                            }
+                        }
+                    },
                     scales: {
                         y: {
                             beginAtZero: true,
-                            max: 100,
+                            max: yAxisMax,
                             title: {
                                 display: true,
-                                text: 'Reject Rate (%)'
+                                text: 'Reject Rate (%)',
+                                color: '#333',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            grid: {
+                                color: 'rgba(0, 0, 0, 0.1)'
+                            },
+                            ticks: {
+                                callback: function(value) {
+                                    return value.toFixed(1) + '%';
+                                }
+                            }
+                        },
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Month',
+                                color: '#333',
+                                font: {
+                                    size: 14,
+                                    weight: 'bold'
+                                }
+                            },
+                            grid: {
+                                display: false
                             }
                         }
+                    },
+                    animation: {
+                        duration: 1000,
+                        easing: 'easeInOutQuart'
                     }
                 }
             });
+            
+            // Update trend statistics
+            updateTrendStats(mayRate, juneRate, mayTotal, juneTotal);
+        }
+        
+        // Update trend statistics display
+        function updateTrendStats(mayRate, juneRate, mayTotal, juneTotal) {
+            const rateDifference = juneRate - mayRate;
+            const averageRate = (mayRate + juneRate) / 2;
+            
+            let trendClass = 'trend-stable';
+            let trendSymbol = '→';
+            let trendText = 'Stable';
+            
+            if (rateDifference > 0.5) {
+                trendClass = 'trend-up';
+                trendSymbol = '↗';
+                trendText = 'Increasing';
+            } else if (rateDifference < -0.5) {
+                trendClass = 'trend-down';
+                trendSymbol = '↘';
+                trendText = 'Decreasing';
+            }
+            
+            trendStats.innerHTML = `
+                <div class="stat-item">
+                    <div class="stat-value">${mayRate.toFixed(1)}%</div>
+                    <div class="stat-label">May Rate</div>
+                    <div class="stat-label">(${mayTotal} images)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${juneRate.toFixed(1)}%</div>
+                    <div class="stat-label">June Rate</div>
+                    <div class="stat-label">(${juneTotal} images)</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">${averageRate.toFixed(1)}%</div>
+                    <div class="stat-label">Average</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value ${trendClass}">${Math.abs(rateDifference).toFixed(1)}%</div>
+                    <div class="stat-label">Change</div>
+                    <div class="trend-indicator ${trendClass}">${trendSymbol} ${trendText}</div>
+                </div>
+            `;
         }
         
         // Create month tabs
