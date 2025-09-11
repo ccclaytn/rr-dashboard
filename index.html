@@ -34,7 +34,7 @@
             margin-bottom: 30px;
             text-align: center;
         }
-        input, button {
+        input, button, select {
             padding: 10px 15px;
             margin: 0 10px;
             border-radius: 4px;
@@ -86,14 +86,15 @@
         }
         .month-tabs {
             display: flex;
+            flex-wrap: wrap;
             margin-bottom: 20px;
+            gap: 5px;
         }
         .month-tab {
             padding: 10px 20px;
             background-color: #e0e0e0;
             cursor: pointer;
-            border-radius: 4px 4px 0 0;
-            margin-right: 5px;
+            border-radius: 4px;
         }
         .month-tab.active {
             background-color: #3498db;
@@ -117,43 +118,29 @@
             padding: 20px;
             color: #7f8c8d;
         }
-        .trend-chart-container {
-            position: relative;
-            height: 400px;
-        }
-        .chart-stats {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 15px;
+        .config-note {
+            background-color: #fff8e1;
             padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 6px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border-left: 4px solid #ffc107;
         }
-        .stat-item {
-            text-align: center;
+        .legend-item {
+            display: flex;
+            align-items: center;
+            margin-right: 15px;
         }
-        .stat-value {
-            font-size: 24px;
-            font-weight: bold;
-            color: #2c3e50;
+        .legend-color {
+            width: 15px;
+            height: 15px;
+            margin-right: 5px;
+            display: inline-block;
         }
-        .stat-label {
-            font-size: 12px;
-            color: #7f8c8d;
-            text-transform: uppercase;
-        }
-        .trend-indicator {
-            font-size: 14px;
-            margin-top: 5px;
-        }
-        .trend-up {
-            color: #e74c3c;
-        }
-        .trend-down {
-            color: #27ae60;
-        }
-        .trend-stable {
-            color: #f39c12;
+        .chart-legend {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+            flex-wrap: wrap;
         }
     </style>
 </head>
@@ -167,6 +154,12 @@
         <h2>Enter Radiographer Initials</h2>
         <input type="text" id="techIdInput" placeholder="e.g., AAJ" maxlength="3">
         <button id="fetchDataBtn">Fetch Data</button>
+        
+        <div class="config-note">
+            <h3>Configuration Note</h3>
+            <p>To add new months, update the <code>availableMonths</code> array in the JavaScript code with the new month's data.</p>
+            <p>Current available months: <span id="availableMonthsList"></span></p>
+        </div>
     </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
@@ -178,12 +171,8 @@
     <div id="resultsContainer" style="display: none;">
         <div class="chart-container">
             <h2>Reject Rate Trend</h2>
-            <div class="trend-chart-container">
-                <canvas id="trendChart"></canvas>
-            </div>
-            <div class="chart-stats" id="trendStats">
-                <!-- Stats will be populated here -->
-            </div>
+            <canvas id="trendChart"></canvas>
+            <div class="chart-legend" id="trendLegend"></div>
         </div>
 
         <div class="month-tabs" id="monthTabs">
@@ -209,10 +198,22 @@
     </div>
 
     <script>
+        // Configuration - Update this array when adding new months
+        const availableMonths = [
+            { id: 'APR-2025', name: 'April 2025', fileName: 'APR-2025.json' },
+            { id: 'MAY-2025', name: 'May 2025', fileName: 'MAY-2025.json' },
+            { id: 'JUN-2025', name: 'June 2025', fileName: 'JUN-2025.json' }
+            // Add new months here in the format:
+            // { id: 'MMM-YYYY', name: 'Month YYYY', fileName: 'MMM-YYYY.json' },
+        ];
+
+        // Display available months in the config note
+        document.getElementById('availableMonthsList').textContent = 
+            availableMonths.map(m => m.name).join(', ');
+
         // Global variables
-        let mayData = [];
-        let juneData = [];
-        let currentMonth = '2025-05'; // Default to May
+        let monthlyData = {};
+        let currentMonth = availableMonths[0].id; // Default to first month
         
         // DOM elements
         const techIdInput = document.getElementById('techIdInput');
@@ -224,7 +225,7 @@
         const bodyPartTitle = document.getElementById('bodyPartTitle');
         const rejectRateTitle = document.getElementById('rejectRateTitle');
         const rejectReasonTitle = document.getElementById('rejectReasonTitle');
-        const trendStats = document.getElementById('trendStats');
+        const trendLegend = document.getElementById('trendLegend');
         
         // Chart instances
         let trendChart = null;
@@ -234,208 +235,227 @@
         // Event listeners
         fetchDataBtn.addEventListener('click', fetchData);
         
-showError(error.message);
+        // Function to fetch data
+        async function fetchData() {
+            const techId = techIdInput.value.trim().toUpperCase();
+            
+            if (!techId) {
+                showError("Please enter a radiographer ID");
+                return;
+            }
+            
+            // Reset previous data
+            hideError();
+            showLoading();
+            hideResults();
+            monthlyData = {};
+            
+            try {
+                // Fetch data for all available months
+                const fetchPromises = availableMonths.map(month => 
+                    fetch(`https://ccclaytn.github.io/rr-dashboard/rawdata/${month.fileName}`)
+                        .then(response => {
+                            if (!response.ok) {
+                                throw new Error(`Failed to fetch ${month.fileName}`);
+                            }
+                            return response.json();
+                        })
+                        .then(data => {
+                            monthlyData[month.id] = data;
+                        })
+                        .catch(error => {
+                            console.warn(`Could not load data for ${month.name}:`, error.message);
+                            monthlyData[month.id] = []; // Empty data for this month
+                        })
+                );
+                
+                await Promise.all(fetchPromises);
+                
+                // Check if we have any data for the tech ID
+                let hasData = false;
+                for (const month of availableMonths) {
+                    const monthData = monthlyData[month.id] || [];
+                    const techData = monthData.filter(item => item['Tech ID'] === techId);
+                    if (techData.length > 0) {
+                        hasData = true;
+                        break;
+                    }
+                }
+                
+                if (!hasData) {
+                    throw new Error(`No data found for radiographer ${techId}`);
+                }
+                
+                // Process and display data
+                processAndDisplayData(techId);
+                
+            } catch (error) {
+                showError(error.message);
             } finally {
                 hideLoading();
             }
         }
         
         // Process data and create visualizations
-        function processAndDisplayData(techId, mayData, juneData) {
+        function processAndDisplayData(techId) {
             // Calculate monthly reject rates
-            const mayRejectRate = calculateRejectRate(mayData);
-            const juneRejectRate = calculateRejectRate(juneData);
+            const monthlyStats = {};
+            
+            availableMonths.forEach(month => {
+                const monthData = monthlyData[month.id] || [];
+                const techData = monthData.filter(item => item['Tech ID'] === techId);
+                monthlyStats[month.id] = calculateMonthlyStats(techData);
+            });
             
             // Create trend chart
-            createTrendChart(mayRejectRate, juneRejectRate, mayData.length, juneData.length);
+            createTrendChart(monthlyStats);
             
             // Create month tabs
             createMonthTabs();
             
-            // Display data for the default month (May)
-            displayMonthData('2025-05', mayData);
+            // Display data for the default month
+            displayMonthData(currentMonth);
             
             // Show results container
             resultsContainer.style.display = 'block';
         }
         
-        // Calculate reject rate for a dataset
-        function calculateRejectRate(data) {
-            if (data.length === 0) return 0;
-            
+        // Calculate monthly statistics
+        function calculateMonthlyStats(data) {
             const totalImages = data.length;
             const rejectedImages = data.filter(item => item['Reject Category'] && item['Reject Category'].trim() !== '').length;
+            const rejectRate = totalImages > 0 ? (rejectedImages / totalImages) * 100 : 0;
             
-            return (rejectedImages / totalImages) * 100;
+            return {
+                totalImages,
+                rejectedImages,
+                rejectRate,
+                data
+            };
         }
         
-        // Create enhanced trend chart with line + bar combination
-        function createTrendChart(mayRate, juneRate, mayTotal, juneTotal) {
+        // Create trend chart with line+bar combination
+        function createTrendChart(monthlyStats) {
             const ctx = document.getElementById('trendChart').getContext('2d');
             
             if (trendChart) {
                 trendChart.destroy();
             }
             
-            // Calculate dynamic scale
-            const maxRate = Math.max(mayRate, juneRate);
-            const yAxisMax = maxRate === 0 ? 10 : Math.ceil(maxRate * 1.2);
+            // Prepare data for chart
+            const labels = availableMonths.map(month => month.name);
+            const totalImagesData = availableMonths.map(month => monthlyStats[month.id].totalImages);
+            const rejectRateData = availableMonths.map(month => monthlyStats[month.id].rejectRate);
             
+            // Calculate dynamic scaling for y-axes
+            const maxTotalImages = Math.max(...totalImagesData);
+            const maxRejectRate = Math.max(...rejectRateData);
+            
+            // Create the chart with dual y-axes
             trendChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: ['May 2025', 'June 2025'],
+                    labels: labels,
                     datasets: [
                         {
-                            label: 'Reject Rate (%)',
-                            type: 'bar',
-                            data: [mayRate, juneRate],
-                            backgroundColor: [
-                                'rgba(52, 152, 219, 0.6)',
-                                'rgba(155, 89, 182, 0.6)'
-                            ],
-                            borderColor: [
-                                'rgba(52, 152, 219, 1)',
-                                'rgba(155, 89, 182, 1)'
-                            ],
+                            label: 'Total Images',
+                            data: totalImagesData,
+                            backgroundColor: 'rgba(52, 152, 219, 0.7)',
+                            borderColor: 'rgba(52, 152, 219, 1)',
                             borderWidth: 2,
-                            borderRadius: 8,
-                            borderSkipped: false,
+                            yAxisID: 'y',
+                            order: 2
                         },
                         {
-                            label: 'Trend Line',
-                            type: 'line',
-                            data: [mayRate, juneRate],
-                            backgroundColor: 'rgba(231, 76, 60, 0.1)',
+                            label: 'Reject Rate (%)',
+                            data: rejectRateData,
+                            backgroundColor: 'rgba(0, 0, 0, 0)',
                             borderColor: 'rgba(231, 76, 60, 1)',
                             borderWidth: 3,
                             pointBackgroundColor: 'rgba(231, 76, 60, 1)',
-                            pointBorderColor: '#fff',
-                            pointBorderWidth: 2,
-                            pointRadius: 8,
-                            pointHoverRadius: 10,
-                            tension: 0.2,
-                            fill: false
+                            pointRadius: 6,
+                            pointHoverRadius: 8,
+                            type: 'line',
+                            yAxisID: 'y1',
+                            order: 1,
+                            tension: 0.1
                         }
                     ]
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     interaction: {
+                        mode: 'index',
                         intersect: false,
-                        mode: 'index'
                     },
                     plugins: {
-                        legend: {
-                            display: true,
-                            position: 'top',
-                            labels: {
-                                usePointStyle: true,
-                                padding: 20
-                            }
-                        },
                         tooltip: {
-                            backgroundColor: 'rgba(0, 0, 0, 0.8)',
-                            titleColor: '#fff',
-                            bodyColor: '#fff',
-                            borderColor: 'rgba(255, 255, 255, 0.1)',
-                            borderWidth: 1,
                             callbacks: {
-                                afterBody: function(tooltipItems) {
-                                    const index = tooltipItems[0].dataIndex;
-                                    const total = index === 0 ? mayTotal : juneTotal;
-                                    return `Total Images: ${total}`;
+                                label: function(context) {
+                                    let label = context.dataset.label || '';
+                                    if (label) {
+                                        label += ': ';
+                                    }
+                                    if (context.datasetIndex === 0) {
+                                        label += context.parsed.y + ' images';
+                                    } else {
+                                        label += context.parsed.y.toFixed(1) + '%';
+                                    }
+                                    return label;
                                 }
                             }
+                        },
+                        legend: {
+                            display: false
                         }
                     },
                     scales: {
                         y: {
-                            beginAtZero: true,
-                            max: yAxisMax,
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
                             title: {
                                 display: true,
-                                text: 'Reject Rate (%)',
-                                color: '#333',
-                                font: {
-                                    size: 14,
-                                    weight: 'bold'
-                                }
+                                text: 'Total Images'
                             },
+                            beginAtZero: true,
+                            max: Math.ceil(maxTotalImages * 1.1), // Add 10% padding
                             grid: {
-                                color: 'rgba(0, 0, 0, 0.1)'
-                            },
-                            ticks: {
-                                callback: function(value) {
-                                    return value.toFixed(1) + '%';
-                                }
+                                drawOnChartArea: false
                             }
                         },
-                        x: {
+                        y1: {
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
                             title: {
                                 display: true,
-                                text: 'Month',
-                                color: '#333',
-                                font: {
-                                    size: 14,
-                                    weight: 'bold'
-                                }
+                                text: 'Reject Rate (%)'
                             },
+                            beginAtZero: true,
+                            max: Math.min(100, Math.ceil(maxRejectRate * 1.2)), // Add 20% padding but cap at 100%
                             grid: {
-                                display: false
+                                drawOnChartArea: false
                             }
                         }
-                    },
-                    animation: {
-                        duration: 1000,
-                        easing: 'easeInOutQuart'
                     }
                 }
             });
             
-            // Update trend statistics
-            updateTrendStats(mayRate, juneRate, mayTotal, juneTotal);
+            // Create custom legend
+            createTrendLegend();
         }
         
-        // Update trend statistics display
-        function updateTrendStats(mayRate, juneRate, mayTotal, juneTotal) {
-            const rateDifference = juneRate - mayRate;
-            const averageRate = (mayRate + juneRate) / 2;
-            
-            let trendClass = 'trend-stable';
-            let trendSymbol = '→';
-            let trendText = 'Stable';
-            
-            if (rateDifference > 0.5) {
-                trendClass = 'trend-up';
-                trendSymbol = '↗';
-                trendText = 'Increasing';
-            } else if (rateDifference < -0.5) {
-                trendClass = 'trend-down';
-                trendSymbol = '↘';
-                trendText = 'Decreasing';
-            }
-            
-            trendStats.innerHTML = `
-                <div class="stat-item">
-                    <div class="stat-value">${mayRate.toFixed(1)}%</div>
-                    <div class="stat-label">May Rate</div>
-                    <div class="stat-label">(${mayTotal} images)</div>
+        // Create custom legend for the trend chart
+        function createTrendLegend() {
+            trendLegend.innerHTML = `
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: rgba(52, 152, 219, 0.7)"></span>
+                    <span>Total Images</span>
                 </div>
-                <div class="stat-item">
-                    <div class="stat-value">${juneRate.toFixed(1)}%</div>
-                    <div class="stat-label">June Rate</div>
-                    <div class="stat-label">(${juneTotal} images)</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value">${averageRate.toFixed(1)}%</div>
-                    <div class="stat-label">Average</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-value ${trendClass}">${Math.abs(rateDifference).toFixed(1)}%</div>
-                    <div class="stat-label">Change</div>
-                    <div class="trend-indicator ${trendClass}">${trendSymbol} ${trendText}</div>
+                <div class="legend-item">
+                    <span class="legend-color" style="background-color: rgba(231, 76, 60, 1)"></span>
+                    <span>Reject Rate (%)</span>
                 </div>
             `;
         }
@@ -444,12 +464,7 @@ showError(error.message);
         function createMonthTabs() {
             monthTabs.innerHTML = '';
             
-            const months = [
-                { id: '2025-05', name: 'May 2025' },
-                { id: '2025-06', name: 'June 2025' }
-            ];
-            
-            months.forEach(month => {
+            availableMonths.forEach(month => {
                 const tab = document.createElement('div');
                 tab.className = `month-tab ${month.id === currentMonth ? 'active' : ''}`;
                 tab.textContent = month.name;
@@ -460,7 +475,7 @@ showError(error.message);
                     
                     // Update data display
                     currentMonth = month.id;
-                    displayMonthData(month.id, month.id === '2025-05' ? mayData : juneData);
+                    displayMonthData(month.id);
                 });
                 
                 monthTabs.appendChild(tab);
@@ -468,18 +483,12 @@ showError(error.message);
         }
         
         // Display data for a specific month
-        function displayMonthData(monthId, data) {
+        function displayMonthData(monthId) {
             const techId = techIdInput.value.trim().toUpperCase();
-            const monthData = data.filter(item => item['Tech ID'] === techId);
+            const monthData = (monthlyData[monthId] || []).filter(item => item['Tech ID'] === techId);
+            const monthName = availableMonths.find(m => m.id === monthId)?.name || monthId;
             
             // Update titles with month
-            const monthNames = {
-                '2025-04': 'April 2025',
-                '2025-05': 'May 2025', 
-                '2025-06': 'June 2025'
-            };
-            const monthName = monthNames[monthId] || monthId;
-            
             bodyPartTitle.textContent = `Body Parts Imaged - ${monthName}`;
             rejectRateTitle.textContent = `Reject Rate by Body Part - ${monthName}`;
             rejectReasonTitle.textContent = `Reject Reasons by Body Part - ${monthName}`;
@@ -569,17 +578,16 @@ showError(error.message);
                 }
             });
             
-            // Calculate reject rates and prepare data for chart
-            const bodyPartRates = [];
-            for (const [bodyPart, stats] of Object.entries(bodyPartStats)) {
-                const rejectRate = stats.total > 0 ? (stats.rejected / stats.total) * 100 : 0;
-                bodyPartRates.push({ bodyPart, rejectRate, total: stats.total });
-            }
-            
-            // Sort by reject rate descending and take top 10
-            const topBodyParts = bodyPartRates
+            // Calculate reject rates and filter out body parts with too few images
+            const rejectRates = Object.entries(bodyPartStats)
+                .filter(([_, stats]) => stats.total >= 5) // Only include body parts with at least 5 images
+                .map(([bodyPart, stats]) => ({
+                    bodyPart,
+                    rejectRate: (stats.rejected / stats.total) * 100,
+                    totalImages: stats.total
+                }))
                 .sort((a, b) => b.rejectRate - a.rejectRate)
-                .slice(0, 10);
+                .slice(0, 10); // Top 10 only
             
             const ctx = document.getElementById('rejectRateChart').getContext('2d');
             
@@ -590,12 +598,21 @@ showError(error.message);
             rejectRateChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
-                    labels: topBodyParts.map(item => item.bodyPart),
+                    labels: rejectRates.map(item => item.bodyPart),
                     datasets: [{
                         label: 'Reject Rate (%)',
-                        data: topBodyParts.map(item => item.rejectRate),
-                        backgroundColor: 'rgba(231, 76, 60, 0.7)',
-                        borderColor: 'rgba(231, 76, 60, 1)',
+                        data: rejectRates.map(item => item.rejectRate),
+                        backgroundColor: rejectRates.map(item => {
+                            // Color coding based on reject rate
+                            if (item.rejectRate > 15) return 'rgba(231, 76, 60, 0.7)'; // High - red
+                            if (item.rejectRate > 8) return 'rgba(241, 196, 15, 0.7)'; // Medium - yellow
+                            return 'rgba(46, 204, 113, 0.7)'; // Low - green
+                        }),
+                        borderColor: rejectRates.map(item => {
+                            if (item.rejectRate > 15) return 'rgba(231, 76, 60, 1)';
+                            if (item.rejectRate > 8) return 'rgba(241, 196, 15, 1)';
+                            return 'rgba(46, 204, 113, 1)';
+                        }),
                         borderWidth: 1
                     }]
                 },
@@ -604,10 +621,23 @@ showError(error.message);
                     scales: {
                         y: {
                             beginAtZero: true,
-                            max: 100,
+                            max: Math.min(100, Math.ceil(Math.max(...rejectRates.map(r => r.rejectRate)) * 1.2)),
                             title: {
                                 display: true,
                                 text: 'Reject Rate (%)'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const bodyPart = rejectRates[context.dataIndex];
+                                    return [
+                                        `Reject Rate: ${bodyPart.rejectRate.toFixed(1)}%`,
+                                        `Total Images: ${bodyPart.totalImages}`
+                                    ];
+                                }
                             }
                         }
                     }
@@ -619,47 +649,53 @@ showError(error.message);
         function createRejectReasonTable(data) {
             const bodyPartReasons = {};
             
-            // Organize data by body part and reject reason
+            // Count reject reasons by body part
             data.forEach(item => {
-                const bodyPart = item['Body Part'];
-                const rejectCategory = item['Reject Category'] || 'Not Rejected';
-                
-                if (!bodyPartReasons[bodyPart]) {
-                    bodyPartReasons[bodyPart] = {};
+                if (item['Reject Category'] && item['Reject Category'].trim() !== '') {
+                    const bodyPart = item['Body Part'];
+                    const reason = item['Reject Category'];
+                    
+                    if (!bodyPartReasons[bodyPart]) {
+                        bodyPartReasons[bodyPart] = {};
+                    }
+                    
+                    bodyPartReasons[bodyPart][reason] = (bodyPartReasons[bodyPart][reason] || 0) + 1;
                 }
-                
-                bodyPartReasons[bodyPart][rejectCategory] = (bodyPartReasons[bodyPart][rejectCategory] || 0) + 1;
             });
             
             // Create HTML table
             let tableHTML = '<table>';
-            tableHTML += '<thead><tr><th>Body Part</th><th>Reject Reason</th><th>Count</th><th>Percentage</th></tr></thead>';
+            tableHTML += '<thead><tr><th>Body Part</th><th>Reject Reason</th><th>Count</th></tr></thead>';
             tableHTML += '<tbody>';
             
+            let hasData = false;
+            
             for (const [bodyPart, reasons] of Object.entries(bodyPartReasons)) {
-                const totalForBodyPart = Object.values(reasons).reduce((sum, count) => sum + count, 0);
-                let firstRow = true;
+                const reasonEntries = Object.entries(reasons).sort((a, b) => b[1] - a[1]);
                 
-                for (const [reason, count] of Object.entries(reasons)) {
-                    const percentage = ((count / totalForBodyPart) * 100).toFixed(1);
-                    
+                for (let i = 0; i < reasonEntries.length; i++) {
+                    const [reason, count] = reasonEntries[i];
                     tableHTML += `<tr>`;
-                    if (firstRow) {
-                        tableHTML += `<td rowspan="${Object.keys(reasons).length}">${bodyPart}</td>`;
-                        firstRow = false;
+                    
+                    if (i === 0) {
+                        tableHTML += `<td rowspan="${reasonEntries.length}">${bodyPart}</td>`;
                     }
-                    tableHTML += `<td>${reason}</td>`;
-                    tableHTML += `<td>${count}</td>`;
-                    tableHTML += `<td>${percentage}%</td>`;
-                    tableHTML += `</tr>`;
+                    
+                    tableHTML += `<td>${reason}</td><td>${count}</td></tr>`;
+                    hasData = true;
                 }
             }
             
             tableHTML += '</tbody></table>';
+            
+            if (!hasData) {
+                tableHTML = '<div class="no-data">No reject data available for this month</div>';
+            }
+            
             document.getElementById('rejectReasonTable').innerHTML = tableHTML;
         }
         
-        // Utility functions
+        // Helper functions
         function showError(message) {
             errorMessage.textContent = message;
             errorMessage.style.display = 'block';
