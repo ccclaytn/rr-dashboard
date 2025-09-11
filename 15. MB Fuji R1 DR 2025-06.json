@@ -1,0 +1,8284 @@
+[
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "OVER EXPOSED"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HAND"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TOES"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TOES"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "AAJ",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE",
+  "Reject Category": "EQUIPMENT FAULT - FILTER"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING",
+  "Reject Category": "EQUIPMENT FAULT - FILTER"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING",
+  "Reject Category": "EQUIPMENT FAULT - FILTER"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING",
+  "Reject Category": "EQUIPMENT FAULT - FILTER"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING",
+  "Reject Category": "EQUIPMENT FAULT - FILTER"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "ABDOMEN"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "ABDOMEN"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CKM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSE",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PELVIS",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "PATIENT MOTION"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "S I JOINTS",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "RIBS",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PELVIS",
+  "Reject Category": "WRONG DETECTOR"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "RIBS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "RIBS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "S I JOINTS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "S I JOINTS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "S I JOINTS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "CSY02",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR",
+  "Reject Category": "EQUIPMENT FAULT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "OVER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "OVER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "OVER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "OVER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ODONTOID",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ODONTOID",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "WRIST",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CALCANEUM",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CALCANEUM",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CALCANEUM",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ODONTOID",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ABDOMEN"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HUMERUS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HUMERUS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ODONTOID"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ODONTOID"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ODONTOID"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "WRIST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "RIBS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "RIBS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TOES"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TOES"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HUMERUS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HUMERUS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ABDOMEN"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "ABDOMEN"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FINGERS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FINGERS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "T SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "ENS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "PATELLA",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "FZS",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "STITCHING",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "STITCHING",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "STITCHING",
+  "Reject Category": "UNDER EXPOSED"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "HAR",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JBT",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JBT",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JBT",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JBT",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JBT",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JBT",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JHW",
+  "Body Part": "PATELLA",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JHY",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HIP",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "ANATOMY CUT-OFF"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "TIBIA FIBULA",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA",
+  "Reject Category": "ARTEFACT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE",
+  "Reject Category": "EQUIPMENT FAULT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE",
+  "Reject Category": "POSITIONING TECHNIQUE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SCOLIOSIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HAND"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "A C JOINTS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "A C JOINTS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SHOULDER"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ELBOW"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "A C JOINTS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CALCANEUM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOOT"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FOREARM"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HAND"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HUMERUS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HUMERUS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "S SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "SKULL"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "T SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "TIBIA FIBULA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "L SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "C SPINE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FEMUR"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "ANKLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FINGERS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "FINGERS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "STITCHING"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "HIP"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PELVIS"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CHEST"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "CLAVICLE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "KNEE"
+ },
+ {
+  "Tech ID": "JYM",
+  "Body Part": "PATELLA"
+ }
+]
