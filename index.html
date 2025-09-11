@@ -234,47 +234,7 @@
         // Event listeners
         fetchDataBtn.addEventListener('click', fetchData);
         
-        // Function to fetch data
-        async function fetchData() {
-            const techId = techIdInput.value.trim().toUpperCase();
-            
-            if (!techId) {
-                showError("Please enter a radiographer ID");
-                return;
-            }
-            
-            // Reset previous data
-            hideError();
-            showLoading();
-            hideResults();
-            
-            try {
-                // Fetch both months data
-                const [mayResponse, juneResponse] = await Promise.all([
-                    fetch('15. MB Fuji R1 DR 2025-05.json'),
-                    fetch('15. MB Fuji R1 DR 2025-06.json')
-                ]);
-                
-                if (!mayResponse.ok || !juneResponse.ok) {
-                    throw new Error('Failed to fetch data files');
-                }
-                
-                mayData = await mayResponse.json();
-                juneData = await juneResponse.json();
-                
-                // Filter data for the specific tech ID
-                const mayTechData = mayData.filter(item => item['Tech ID'] === techId);
-                const juneTechData = juneData.filter(item => item['Tech ID'] === techId);
-                
-                if (mayTechData.length === 0 && juneTechData.length === 0) {
-                    throw new Error(`No data found for radiographer ${techId}`);
-                }
-                
-                // Process and display data
-                processAndDisplayData(techId, mayTechData, juneTechData);
-                
-            } catch (error) {
-                showError(error.message);
+showError(error.message);
             } finally {
                 hideLoading();
             }
@@ -513,9 +473,16 @@
             const monthData = data.filter(item => item['Tech ID'] === techId);
             
             // Update titles with month
-            bodyPartTitle.textContent = `Body Parts Imaged - ${monthId === '2025-05' ? 'May 2025' : 'June 2025'}`;
-            rejectRateTitle.textContent = `Reject Rate by Body Part - ${monthId === '2025-05' ? 'May 2025' : 'June 2025'}`;
-            rejectReasonTitle.textContent = `Reject Reasons by Body Part - ${monthId === '2025-05' ? 'May 2025' : 'June 2025'}`;
+            const monthNames = {
+                '2025-04': 'April 2025',
+                '2025-05': 'May 2025', 
+                '2025-06': 'June 2025'
+            };
+            const monthName = monthNames[monthId] || monthId;
+            
+            bodyPartTitle.textContent = `Body Parts Imaged - ${monthName}`;
+            rejectRateTitle.textContent = `Reject Rate by Body Part - ${monthName}`;
+            rejectReasonTitle.textContent = `Reject Reasons by Body Part - ${monthName}`;
             
             if (monthData.length === 0) {
                 document.getElementById('bodyPartChart').style.display = 'none';
