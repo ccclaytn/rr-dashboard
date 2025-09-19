@@ -82,17 +82,6 @@
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
-        /* NEW: Specific sizing for different chart types */
-        .data-card.body-part-card,
-        .data-card.room-card {
-            flex: 1 1 45%; /* Same size for body parts and room charts */
-            min-height: 350px; /* Set a minimum height */
-        }
-        .data-card.reject-rate-card,
-        .data-card.reject-reasons-card {
-            flex: 1 1 45%; /* Same size for reject rate and reject reasons charts */
-            min-height: 350px; /* Set a minimum height */
-        }
         .error {
             color: #e74c3c;
             text-align: center;
@@ -200,10 +189,6 @@
         <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
         
-        <div class="optimization-note">
-            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
-        </div>
-    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
@@ -227,26 +212,25 @@
         </div>
 
         <div class="data-section">
-            <div class="data-card body-part-card">
+            <div class="data-card">
                 <h2 id="bodyPartTitle">Body Parts Imaged</h2>
                 <canvas id="bodyPartChart"></canvas>
             </div>
             
-            <div class="data-card reject-rate-card">
+            <div class="data-card">
                 <h2 id="rejectRateTitle">Reject Rate by Body Part</h2>
                 <canvas id="rejectRateChart"></canvas>
             </div>
         </div>
 
-        <!-- New Room Reject Rate Section -->
+        <!-- Room Reject Rate and Reject Reasons Count in the same row -->
         <div class="data-section">
-            <div class="data-card room-card">
+            <div class="data-card">
                 <h2 id="roomRejectRateTitle">Reject Rate by Room</h2>
                 <canvas id="roomRejectRateChart"></canvas>
             </div>
             
-            <!-- New Reject Reasons Count Section -->
-            <div class="data-card reject-reasons-card">
+            <div class="data-card">
                 <h2 id="rejectReasonsTitle">Reject Reasons Count</h2>
                 <canvas id="rejectReasonsChart"></canvas>
             </div>
@@ -264,13 +248,11 @@
             { id: 'APR-2025', name: 'April 2025', fileName: 'APR-2025.json' },
             { id: 'MAY-2025', name: 'May 2025', fileName: 'MAY-2025.json' },
             { id: 'JUN-2025', name: 'June 2025', fileName: 'JUN-2025.json' }
-            // Add new months here in the format:
-            // { id: 'MMM-YYYY', name: 'Month YYYY', fileName: 'MMM-YYYY.json' },
         ];
 
         // Global variables
         let monthlyData = {};
-        let currentMonth = availableMonths[0].id; // Default to first month
+        let currentMonth = availableMonths[0].id;
         
         // DOM elements
         const techIdInput = document.getElementById('techIdInput');
@@ -314,17 +296,14 @@
             monthlyData = {};
             
             try {
-                // Disable button during loading
                 fetchDataBtn.disabled = true;
                 
-                // Fetch data for all available months
                 const fetchPromises = availableMonths.map(month => 
                     fetchMonthData(month)
                 );
                 
                 await Promise.all(fetchPromises);
                 
-                // Check if we have any data for the tech ID
                 let hasData = false;
                 for (const month of availableMonths) {
                     const monthData = monthlyData[month.id] || [];
@@ -339,7 +318,6 @@
                     throw new Error(`No data found for radiographer ${techId}. Please check the ID and try again.`);
                 }
                 
-                // Process and display data
                 processAndDisplayData(techId);
                 
             } catch (error) {
@@ -361,11 +339,9 @@
                     throw new Error(`Failed to fetch ${month.fileName}`);
                 }
                 
-                // Get the response as text to handle large files
                 const text = await response.text();
                 updateProgress(`Processing ${month.name} data...`, 50);
                 
-                // Parse JSON with error handling
                 let data;
                 try {
                     data = JSON.parse(text);
@@ -374,16 +350,14 @@
                     throw new Error(`Invalid JSON format in ${month.fileName}`);
                 }
                 
-                // Store the data
                 monthlyData[month.id] = data;
                 updateProgress(`${month.name} data loaded successfully`, 100);
                 
-                // Small delay to show progress
                 await new Promise(resolve => setTimeout(resolve, 300));
                 
             } catch (error) {
                 console.warn(`Could not load data for ${month.name}:`, error.message);
-                monthlyData[month.id] = []; // Empty data for this month
+                monthlyData[month.id] = [];
                 updateProgress(`Error loading ${month.name}: ${error.message}`, 0, true);
             }
         }
@@ -402,7 +376,6 @@
         
         // Process data and create visualizations
         function processAndDisplayData(techId) {
-            // Calculate monthly reject rates
             const monthlyStats = {};
             
             availableMonths.forEach(month => {
@@ -411,16 +384,9 @@
                 monthlyStats[month.id] = calculateMonthlyStats(techData);
             });
             
-            // Create trend chart
             createTrendChart(monthlyStats);
-            
-            // Create month tabs
             createMonthTabs();
-            
-            // Display data for the default month
             displayMonthData(currentMonth);
-            
-            // Show results container
             resultsContainer.style.display = 'block';
         }
         
@@ -446,17 +412,14 @@
                 trendChart.destroy();
             }
             
-            // Prepare data for chart
             const labels = availableMonths.map(month => month.name);
             const totalImagesData = availableMonths.map(month => monthlyStats[month.id].totalImages);
             const rejectRateData = availableMonths.map(month => monthlyStats[month.id].rejectRate);
             const rejectedImagesData = availableMonths.map(month => monthlyStats[month.id].rejectedImages);
             
-            // Calculate dynamic scaling for y-axes
             const maxTotalImages = Math.max(...totalImagesData);
             const maxRejectRate = Math.max(...rejectRateData);
             
-            // Create the chart with dual y-axes
             trendChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -535,7 +498,7 @@
                                 text: 'Number of Images'
                             },
                             beginAtZero: true,
-                            max: Math.ceil(maxTotalImages * 1.1), // Add 10% padding
+                            max: Math.ceil(maxTotalImages * 1.1),
                             grid: {
                                 drawOnChartArea: false
                             }
@@ -549,7 +512,7 @@
                                 text: 'Reject Rate (%)'
                             },
                             beginAtZero: true,
-                            max: Math.min(100, Math.ceil(maxRejectRate * 1.2)), // Add 20% padding but cap at 100%
+                            max: Math.min(100, Math.ceil(maxRejectRate * 1.2)),
                             grid: {
                                 drawOnChartArea: false
                             }
@@ -558,7 +521,6 @@
                 }
             });
             
-            // Create custom legend
             createTrendLegend();
         }
         
@@ -589,11 +551,8 @@
                 tab.className = `month-tab ${month.id === currentMonth ? 'active' : ''}`;
                 tab.textContent = month.name;
                 tab.addEventListener('click', () => {
-                    // Update active tab
                     document.querySelectorAll('.month-tab').forEach(t => t.classList.remove('active'));
                     tab.classList.add('active');
-                    
-                    // Update data display
                     currentMonth = month.id;
                     displayMonthData(month.id);
                 });
@@ -608,7 +567,6 @@
             const monthData = (monthlyData[monthId] || []).filter(item => item['Tech ID'] === techId);
             const monthName = availableMonths.find(m => m.id === monthId)?.name || monthId;
             
-            // Update titles with month
             bodyPartTitle.textContent = `Body Parts Imaged - ${monthName}`;
             rejectRateTitle.textContent = `Reject Rate by Body Part - ${monthName}`;
             roomRejectRateTitle.textContent = `Reject Rate by Room - ${monthName}`;
@@ -629,19 +587,10 @@
             document.getElementById('roomRejectRateChart').style.display = 'block';
             document.getElementById('rejectReasonsChart').style.display = 'block';
             
-            // Create body part chart
             createBodyPartChart(monthData);
-            
-            // Create reject rate chart
             createRejectRateChart(monthData);
-            
-            // Create room reject rate chart
             createRoomRejectRateChart(monthData);
-            
-            // Create reject reasons count chart
             createRejectReasonsChart(monthData);
-            
-            // Create reject reason table
             createRejectReasonTable(monthData);
         }
         
@@ -649,7 +598,6 @@
         function createBodyPartChart(data) {
             const bodyPartStats = {};
             
-            // Initialize counts for each body part
             data.forEach(item => {
                 const bodyPart = item['Body Part'];
                 if (!bodyPartStats[bodyPart]) {
@@ -662,7 +610,6 @@
                 }
             });
             
-            // Calculate reject rates and prepare data for chart
             const bodyPartData = [];
             for (const [bodyPart, stats] of Object.entries(bodyPartStats)) {
                 const rejectRate = stats.total > 0 ? (stats.rejected / stats.total) * 100 : 0;
@@ -674,7 +621,6 @@
                 });
             }
             
-            // Sort by total descending and take top 10
             const topBodyParts = bodyPartData
                 .sort((a, b) => b.total - a.total)
                 .slice(0, 10);
@@ -685,19 +631,18 @@
                 bodyPartChart.destroy();
             }
             
-            // Generate a color palette
             const generateColors = (count) => {
                 const colors = [
-                    'rgba(52, 152, 219, 0.7)',   // Blue
-                    'rgba(46, 204, 113, 0.7)',   // Green
-                    'rgba(155, 89, 182, 0.7)',   // Purple
-                    'rgba(241, 196, 15, 0.7)',   // Yellow
-                    'rgba(230, 126, 34, 0.7)',   // Orange
-                    'rgba(231, 76, 60, 0.7)',    // Red
-                    'rgba(149, 165, 166, 0.7)',  // Gray
-                    'rgba(26, 188, 156, 0.7)',   // Turquoise
-                    'rgba(241, 148, 138, 0.7)',  // Light Red
-                    'rgba(174, 168, 211, 0.7)'   // Light Purple
+                    'rgba(52, 152, 219, 0.7)',
+                    'rgba(46, 204, 113, 0.7)',
+                    'rgba(155, 89, 182, 0.7)',
+                    'rgba(241, 196, 15, 0.7)',
+                    'rgba(230, 126, 34, 0.7)',
+                    'rgba(231, 76, 60, 0.7)',
+                    'rgba(149, 165, 166, 0.7)',
+                    'rgba(26, 188, 156, 0.7)',
+                    'rgba(241, 148, 138, 0.7)',
+                    'rgba(174, 168, 211, 0.7)'
                 ];
                 return colors.slice(0, count);
             };
@@ -715,7 +660,6 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         tooltip: {
                             callbacks: {
@@ -748,7 +692,6 @@
         function createRejectRateChart(data) {
             const bodyPartStats = {};
             
-            // Initialize counts for each body part
             data.forEach(item => {
                 const bodyPart = item['Body Part'];
                 if (!bodyPartStats[bodyPart]) {
@@ -761,9 +704,8 @@
                 }
             });
             
-            // Calculate reject rates and filter out body parts with too few images
             const rejectRates = Object.entries(bodyPartStats)
-                .filter(([_, stats]) => stats.total >= 5) // Only include body parts with at least 5 images
+                .filter(([_, stats]) => stats.total >= 5)
                 .map(([bodyPart, stats]) => ({
                     bodyPart,
                     rejectRate: (stats.rejected / stats.total) * 100,
@@ -771,7 +713,7 @@
                     rejectedImages: stats.rejected
                 }))
                 .sort((a, b) => b.rejectRate - a.rejectRate)
-                .slice(0, 10); // Top 10 only
+                .slice(0, 10);
             
             const ctx = document.getElementById('rejectRateChart').getContext('2d');
             
@@ -787,10 +729,9 @@
                         label: 'Reject Rate (%)',
                         data: rejectRates.map(item => item.rejectRate),
                         backgroundColor: rejectRates.map(item => {
-                            // Color coding based on reject rate
-                            if (item.rejectRate > 15) return 'rgba(231, 76, 60, 0.7)'; // High - red
-                            if (item.rejectRate > 8) return 'rgba(241, 196, 15, 0.7)'; // Medium - yellow
-                            return 'rgba(46, 204, 113, 0.7)'; // Low - green
+                            if (item.rejectRate > 15) return 'rgba(231, 76, 60, 0.7)';
+                            if (item.rejectRate > 8) return 'rgba(241, 196, 15, 0.7)';
+                            return 'rgba(46, 204, 113, 0.7)';
                         }),
                         borderColor: rejectRates.map(item => {
                             if (item.rejectRate > 15) return 'rgba(231, 76, 60, 1)';
@@ -802,7 +743,6 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -835,7 +775,6 @@
         function createRoomRejectRateChart(data) {
             const roomStats = {};
             
-            // Initialize counts for each room
             data.forEach(item => {
                 const room = item['Room'] || 'Unknown';
                 if (!roomStats[room]) {
@@ -848,7 +787,6 @@
                 }
             });
             
-            // Calculate reject rates and prepare data for chart
             const roomData = [];
             for (const [room, stats] of Object.entries(roomStats)) {
                 const rejectRate = stats.total > 0 ? (stats.rejected / stats.total) * 100 : 0;
@@ -860,9 +798,7 @@
                 });
             }
             
-            // Sort by total descending
-            const sortedRooms = roomData
-                .sort((a, b) => b.total - a.total);
+            const sortedRooms = roomData.sort((a, b) => b.total - a.total);
             
             const ctx = document.getElementById('roomRejectRateChart').getContext('2d');
             
@@ -870,22 +806,20 @@
                 roomRejectRateChart.destroy();
             }
             
-            // Generate a color palette
             const generateColors = (count) => {
                 const colors = [
-                    'rgba(52, 152, 219, 0.7)',   // Blue
-                    'rgba(46, 204, 113, 0.7)',   // Green
-                    'rgba(155, 89, 182, 0.7)',   // Purple
-                    'rgba(241, 196, 15, 0.7)',   // Yellow
-                    'rgba(230, 126, 34, 0.7)',   // Orange
-                    'rgba(231, 76, 60, 0.7)',    // Red
-                    'rgba(149, 165, 166, 0.7)',  // Gray
-                    'rgba(26, 188, 156, 0.7)',   // Turquoise
-                    'rgba(241, 148, 138, 0.7)',  // Light Red
-                    'rgba(174, 168, 211, 0.7)'   // Light Purple
+                    'rgba(52, 152, 219, 0.7)',
+                    'rgba(46, 204, 113, 0.7)',
+                    'rgba(155, 89, 182, 0.7)',
+                    'rgba(241, 196, 15, 0.7)',
+                    'rgba(230, 126, 34, 0.7)',
+                    'rgba(231, 76, 60, 0.7)',
+                    'rgba(149, 165, 166, 0.7)',
+                    'rgba(26, 188, 156, 0.7)',
+                    'rgba(241, 148, 138, 0.7)',
+                    'rgba(174, 168, 211, 0.7)'
                 ];
                 
-                // If we need more colors than available, generate random ones
                 if (count > colors.length) {
                     for (let i = colors.length; i < count; i++) {
                         colors.push(`rgba(${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, ${Math.floor(Math.random() * 255)}, 0.7)`);
@@ -908,7 +842,6 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         tooltip: {
                             callbacks: {
@@ -941,7 +874,6 @@
         function createRejectReasonsChart(data) {
             const rejectReasons = {};
             
-            // Count reject reasons
             data.forEach(item => {
                 if (item['Reject Category'] && item['Reject Category'].trim() !== '') {
                     const reason = item['Reject Category'];
@@ -949,7 +881,6 @@
                 }
             });
             
-            // Sort by count descending and take top 10
             const sortedReasons = Object.entries(rejectReasons)
                 .map(([reason, count]) => ({ reason, count }))
                 .sort((a, b) => b.count - a.count)
@@ -975,8 +906,7 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
-                    indexAxis: 'y', // Horizontal bars
+                    indexAxis: 'y',
                     scales: {
                         x: {
                             beginAtZero: true,
@@ -1003,7 +933,6 @@
         function createRejectReasonTable(data) {
             const bodyPartReasons = {};
             
-            // Count reject reasons by body part
             data.forEach(item => {
                 if (item['Reject Category'] && item['Reject Category'].trim() !== '') {
                     const bodyPart = item['Body Part'];
@@ -1017,7 +946,6 @@
                 }
             });
             
-            // Create HTML table
             let tableHTML = '<table>';
             tableHTML += '<thead><tr><th>Body Part</th><th>Reject Reason</th><th>Count</th></tr></thead>';
             tableHTML += '<tbody>';
