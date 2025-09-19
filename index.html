@@ -31,6 +31,7 @@
         h2 {
             font-size: 18px;
             margin-top: 0;
+            margin-bottom: 15px;
         }
         .input-section {
             background-color: white;
@@ -81,6 +82,15 @@
             padding: 15px;
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
+        }
+        .chart-wrapper {
+            flex: 1;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         .error {
             color: #e74c3c;
@@ -190,6 +200,8 @@
             padding: 15px;
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
@@ -232,12 +244,16 @@
         <div class="data-section">
             <div class="data-card">
                 <h2 id="bodyPartTitle">Body Parts Imaged</h2>
-                <canvas id="bodyPartChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="bodyPartChart"></canvas>
+                </div>
             </div>
             
             <div class="data-card">
                 <h2 id="rejectRateTitle">Reject Rate by Body Part</h2>
-                <canvas id="rejectRateChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="rejectRateChart"></canvas>
+                </div>
             </div>
         </div>
 
@@ -245,12 +261,16 @@
         <div class="reject-details-section">
             <div class="reject-details-card">
                 <h2 id="rejectRoomTitle">Reject Rate by Room</h2>
-                <canvas id="rejectRoomChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="rejectRoomChart"></canvas>
+                </div>
             </div>
             
             <div class="reject-details-card">
                 <h2 id="rejectReasonTitle">Reject Rate by Reason</h2>
-                <canvas id="rejectReasonChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="rejectReasonChart"></canvas>
+                </div>
             </div>
         </div>
 
@@ -273,6 +293,28 @@
         // Global variables
         let monthlyData = {};
         let currentMonth = availableMonths[0].id; // Default to first month
+        
+        // Define a consistent color palette for all pie charts
+        const pieChartColors = [
+            'rgba(231, 76, 60, 0.8)',    // Red
+            'rgba(52, 152, 219, 0.8)',   // Blue
+            'rgba(46, 204, 113, 0.8)',   // Green
+            'rgba(241, 196, 15, 0.8)',   // Yellow
+            'rgba(155, 89, 182, 0.8)',   // Purple
+            'rgba(230, 126, 34, 0.8)',   // Orange
+            'rgba(52, 73, 94, 0.8)',     // Dark blue
+            'rgba(149, 165, 166, 0.8)',  // Gray
+            'rgba(26, 188, 156, 0.8)',   // Turquoise
+            'rgba(214, 48, 49, 0.8)',    // Dark red
+            'rgba(241, 148, 138, 0.8)',  // Light red
+            'rgba(248, 196, 113, 0.8)',  // Light orange
+            'rgba(133, 193, 233, 0.8)',  // Light blue
+            'rgba(129, 236, 236, 0.8)',  // Light turquoise
+            'rgba(163, 203, 56, 0.8)',   // Light green
+            'rgba(253, 203, 110, 0.8)',  // Light yellow
+            'rgba(180, 142, 173, 0.8)',  // Light purple
+            'rgba(127, 140, 141, 0.8)'   // Dark gray
+        ];
         
         // DOM elements
         const techIdInput = document.getElementById('techIdInput');
@@ -500,6 +542,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     interaction: {
                         mode: 'index',
                         intersect: false,
@@ -647,29 +690,13 @@
             const sortedBodyParts = Object.entries(bodyPartCounts)
                 .sort((a, b) => b[1] - a[1]);
             
-            // Get top 8 and group the rest as "Other"
-            const topBodyParts = sortedBodyParts.slice(0, 8);
-            const otherCount = sortedBodyParts.slice(8).reduce((sum, item) => sum + item[1], 0);
+            const labels = sortedBodyParts.map(item => item[0]);
+            const counts = sortedBodyParts.map(item => item[1]);
             
-            if (otherCount > 0) {
-                topBodyParts.push(['Other', otherCount]);
-            }
-            
-            const labels = topBodyParts.map(item => item[0]);
-            const counts = topBodyParts.map(item => item[1]);
-            
-            // Define a color palette for the pie chart
-            const colorPalette = [
-                'rgba(52, 152, 219, 0.7)',
-                'rgba(46, 204, 113, 0.7)',
-                'rgba(241, 196, 15, 0.7)',
-                'rgba(231, 76, 60, 0.7)',
-                'rgba(155, 89, 182, 0.7)',
-                'rgba(52, 73, 94, 0.7)',
-                'rgba(230, 126, 34, 0.7)',
-                'rgba(149, 165, 166, 0.7)',
-                'rgba(26, 188, 156, 0.7)'
-            ];
+            // Assign colors based on sorted order (largest gets first color)
+            const backgroundColors = sortedBodyParts.map((_, index) => 
+                pieChartColors[index % pieChartColors.length]
+            );
             
             bodyPartChart = new Chart(ctx, {
                 type: 'pie',
@@ -677,16 +704,23 @@
                     labels: labels,
                     datasets: [{
                         data: counts,
-                        backgroundColor: colorPalette,
-                        borderColor: colorPalette.map(color => color.replace('0.7', '1')),
+                        backgroundColor: backgroundColors,
+                        borderColor: backgroundColors.map(color => color.replace('0.8', '1')),
                         borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right'
+                            position: 'right',
+                            labels: {
+                                boxWidth: 12,
+                                font: {
+                                    size: 11
+                                }
+                            }
                         },
                         tooltip: {
                             callbacks: {
@@ -767,6 +801,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             display: false
@@ -818,7 +853,7 @@
                 if (item['Reject Category'] && item['Reject Category'].trim() !== '') {
                     roomStats[room].rejected++;
                 }
-            });
+            }
             
             // Calculate reject rates
             const rejectRates = [];
@@ -857,6 +892,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             display: false
@@ -908,40 +944,34 @@
             const labels = sortedReasons.map(item => item[0]);
             const counts = sortedReasons.map(item => item[1]);
             
+            // Assign colors based on sorted order (largest gets first color)
+            const backgroundColors = sortedReasons.map((_, index) => 
+                pieChartColors[index % pieChartColors.length]
+            );
+            
             rejectReasonChart = new Chart(ctx, {
                 type: 'pie',
                 data: {
                     labels: labels,
                     datasets: [{
                         data: counts,
-                        backgroundColor: [
-                            'rgba(231, 76, 60, 0.7)',
-                            'rgba(241, 196, 15, 0.7)',
-                            'rgba(46, 204, 113, 0.7)',
-                            'rgba(52, 152, 219, 0.7)',
-                            'rgba(155, 89, 182, 0.7)',
-                            'rgba(52, 73, 94, 0.7)',
-                            'rgba(230, 126, 34, 0.7)',
-                            'rgba(149, 165, 166, 0.7)'
-                        ],
-                        borderColor: [
-                            'rgba(231, 76, 60, 1)',
-                            'rgba(241, 196, 15, 1)',
-                            'rgba(46, 204, 113, 1)',
-                            'rgba(52, 152, 219, 1)',
-                            'rgba(155, 89, 182, 1)',
-                            'rgba(52, 73, 94, 1)',
-                            'rgba(230, 126, 34, 1)',
-                            'rgba(149, 165, 166, 1)'
-                        ],
+                        backgroundColor: backgroundColors,
+                        borderColor: backgroundColors.map(color => color.replace('0.8', '1')),
                         borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right'
+                            position: 'right',
+                            labels: {
+                                boxWidth: 12,
+                                font: {
+                                    size: 11
+                                }
+                            }
                         },
                         tooltip: {
                             callbacks: {
