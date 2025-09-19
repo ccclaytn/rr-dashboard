@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radiographer Reject Rate Analysis</title>
+    <title>Reject Rate Analysis</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -267,19 +267,13 @@
 </head>
 <body>
     <header>
-        <h1>Radiographer Reject Rate Analysis</h1>
-        <p>Analyze image reject rates and trends by radiographer</p>
+        <h1>Reject Rate Analysis</h1>
     </header>
 
     <div class="input-section">
-        <h2>Enter Radiographer Initials</h2>
-        <input type="text" id="techIdInput" placeholder="e.g., AAJ" maxlength="3">
+        <h2>Enter Initials</h2>
+        <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
-        
-        <div class="optimization-note">
-            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
-        </div>
-    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
