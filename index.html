@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Radiographer Reject Rate Analysis</title>
+    <title>Reject Rate Analysis</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -31,7 +31,6 @@
         h2 {
             font-size: 18px;
             margin-top: 0;
-            margin-bottom: 15px;
         }
         .input-section {
             background-color: white;
@@ -82,15 +81,6 @@
             padding: 15px;
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
-        }
-        .chart-wrapper {
-            flex: 1;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
         }
         .error {
             color: #e74c3c;
@@ -200,26 +190,18 @@
             padding: 15px;
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-            display: flex;
-            flex-direction: column;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Radiographer Reject Rate Analysis</h1>
-        <p>Analyze image reject rates and trends by radiographer</p>
+        <h1>Reject Rate Analysis</h1>
     </header>
 
     <div class="input-section">
         <h2>Enter Radiographer Initials</h2>
         <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
-        
-        <div class="optimization-note">
-            <strong>Note:</strong> This demo uses mock data. Enter any 3-letter code to test.
-        </div>
-    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
@@ -245,16 +227,12 @@
         <div class="data-section">
             <div class="data-card">
                 <h2 id="bodyPartTitle">Body Parts Imaged</h2>
-                <div class="chart-wrapper">
-                    <canvas id="bodyPartChart"></canvas>
-                </div>
+                <canvas id="bodyPartChart"></canvas>
             </div>
             
             <div class="data-card">
                 <h2 id="rejectRateTitle">Reject Rate by Body Part</h2>
-                <div class="chart-wrapper">
-                    <canvas id="rejectRateChart"></canvas>
-                </div>
+                <canvas id="rejectRateChart"></canvas>
             </div>
         </div>
 
@@ -262,16 +240,12 @@
         <div class="reject-details-section">
             <div class="reject-details-card">
                 <h2 id="rejectRoomTitle">Reject Rate by Room</h2>
-                <div class="chart-wrapper">
-                    <canvas id="rejectRoomChart"></canvas>
-                </div>
+                <canvas id="rejectRoomChart"></canvas>
             </div>
             
             <div class="reject-details-card">
                 <h2 id="rejectReasonTitle">Reject Rate by Reason</h2>
-                <div class="chart-wrapper">
-                    <canvas id="rejectReasonChart"></canvas>
-                </div>
+                <canvas id="rejectReasonChart"></canvas>
             </div>
         </div>
 
@@ -295,28 +269,6 @@
         let monthlyData = {};
         let currentMonth = availableMonths[0].id; // Default to first month
         
-        // Define a consistent color palette for all pie charts
-        const pieChartColors = [
-            'rgba(231, 76, 60, 0.8)',    // Red
-            'rgba(52, 152, 219, 0.8)',   // Blue
-            'rgba(46, 204, 113, 0.8)',   // Green
-            'rgba(241, 196, 15, 0.8)',   // Yellow
-            'rgba(155, 89, 182, 0.8)',   // Purple
-            'rgba(230, 126, 34, 0.8)',   // Orange
-            'rgba(52, 73, 94, 0.8)',     // Dark blue
-            'rgba(149, 165, 166, 0.8)',  // Gray
-            'rgba(26, 188, 156, 0.8)',   // Turquoise
-            'rgba(214, 48, 49, 0.8)',    // Dark red
-            'rgba(241, 148, 138, 0.8)',  // Light red
-            'rgba(248, 196, 113, 0.8)',  // Light orange
-            'rgba(133, 193, 233, 0.8)',  // Light blue
-            'rgba(129, 236, 236, 0.8)',  // Light turquoise
-            'rgba(163, 203, 56, 0.8)',   // Light green
-            'rgba(253, 203, 110, 0.8)',  // Light yellow
-            'rgba(180, 142, 173, 0.8)',  // Light purple
-            'rgba(127, 140, 141, 0.8)'   // Dark gray
-        ];
-        
         // DOM elements
         const techIdInput = document.getElementById('techIdInput');
         const fetchDataBtn = document.getElementById('fetchDataBtn');
@@ -325,7 +277,7 @@
         const progressBar = document.getElementById('progressBar');
         const progressText = document.getElementById('progressText');
         const resultsContainer = document.getElementById('resultsContainer');
-        const monthTabs = document.getElementById('monthTaps');
+        const monthTabs = document.getElementById('monthTabs');
         const bodyPartTitle = document.getElementById('bodyPartTitle');
         const rejectRateTitle = document.getElementById('rejectRateTitle');
         const rejectRoomTitle = document.getElementById('rejectRoomTitle');
@@ -362,9 +314,26 @@
                 // Disable button during loading
                 fetchDataBtn.disabled = true;
                 
-                // Generate mock data for all available months
+                // Fetch data for all available months
+                const fetchPromises = availableMonths.map(month => 
+                    fetchMonthData(month)
+                );
+                
+                await Promise.all(fetchPromises);
+                
+                // Check if we have any data for the tech ID
+                let hasData = false;
                 for (const month of availableMonths) {
-                    await fetchMonthData(month);
+                    const monthData = monthlyData[month.id] || [];
+                    const techData = monthData.filter(item => item['Tech ID'] === techId);
+                    if (techData.length > 0) {
+                        hasData = true;
+                        break;
+                    }
+                }
+                
+                if (!hasData) {
+                    throw new Error(`No data found for radiographer ${techId}. Please check the ID and try again.`);
                 }
                 
                 // Process and display data
@@ -378,54 +347,42 @@
             }
         }
         
-        // Function to generate mock data for a single month
+        // Function to fetch and process data for a single month
         async function fetchMonthData(month) {
             try {
-                updateProgress(`Generating ${month.name} data...`, 0);
+                updateProgress(`Loading ${month.name} data...`, 0);
                 
-                // Generate mock data instead of fetching from external source
-                const mockData = generateMockData(month.id);
+                const response = await fetch(`https://ccclaytn.github.io/rr-dashboard/rawdata/${month.fileName}`);
+                
+                if (!response.ok) {
+                    throw new Error(`Failed to fetch ${month.fileName}`);
+                }
+                
+                // Get the response as text to handle large files
+                const text = await response.text();
+                updateProgress(`Processing ${month.name} data...`, 50);
+                
+                // Parse JSON with error handling
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch (parseError) {
+                    console.error(`Error parsing JSON for ${month.name}:`, parseError);
+                    throw new Error(`Invalid JSON format in ${month.fileName}`);
+                }
                 
                 // Store the data
-                monthlyData[month.id] = mockData;
-                updateProgress(`${month.name} data generated successfully`, 100);
+                monthlyData[month.id] = data;
+                updateProgress(`${month.name} data loaded successfully`, 100);
                 
                 // Small delay to show progress
                 await new Promise(resolve => setTimeout(resolve, 300));
                 
             } catch (error) {
-                console.warn(`Could not generate data for ${month.name}:`, error.message);
+                console.warn(`Could not load data for ${month.name}:`, error.message);
                 monthlyData[month.id] = []; // Empty data for this month
-                updateProgress(`Error generating ${month.name}: ${error.message}`, 0, true);
+                updateProgress(`Error loading ${month.name}: ${error.message}`, 0, true);
             }
-        }
-        
-        // Generate mock data for demonstration
-        function generateMockData(monthId) {
-            const techIds = ['AAJ', 'BBK', 'CCL', 'DDM', 'EEN', 'FFO', 'GGP', 'HHQ', 'IIR', 'JJS'];
-            const bodyParts = ['Chest', 'Abdomen', 'Extremity', 'Spine', 'Skull', 'Pelvis', 'Hand', 'Foot', 'Knee', 'Shoulder'];
-            const rooms = ['Room 1', 'Room 2', 'Room 3', 'Room 4', 'Room 5'];
-            const rejectReasons = ['Positioning', 'Artifact', 'Exposure', 'Motion', 'Other', 'Equipment', 'Patient', 'Technique'];
-            
-            const data = [];
-            
-            // Generate 80-120 records per month
-            const recordCount = 80 + Math.floor(Math.random() * 40);
-            
-            for (let i = 0; i < recordCount; i++) {
-                const techId = techIds[Math.floor(Math.random() * techIds.length)];
-                const isRejected = Math.random() < 0.12; // 12% chance of rejection
-                const rejectReason = isRejected ? rejectReasons[Math.floor(Math.random() * rejectReasons.length)] : '';
-                
-                data.push({
-                    'Tech ID': techId,
-                    'Body Part': bodyParts[Math.floor(Math.random() * bodyParts.length)],
-                    'Room': rooms[Math.floor(Math.random() * rooms.length)],
-                    'Reject Category': rejectReason
-                });
-            }
-            
-            return data;
         }
         
         // Update progress bar and text
@@ -538,7 +495,6 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     interaction: {
                         mode: 'index',
                         intersect: false,
@@ -623,7 +579,6 @@
         
         // Create month tabs
         function createMonthTabs() {
-            const monthTabs = document.getElementById('monthTabs');
             monthTabs.innerHTML = '';
             
             availableMonths.forEach(month => {
@@ -687,13 +642,29 @@
             const sortedBodyParts = Object.entries(bodyPartCounts)
                 .sort((a, b) => b[1] - a[1]);
             
-            const labels = sortedBodyParts.map(item => item[0]);
-            const counts = sortedBodyParts.map(item => item[1]);
+            // Get top 8 and group the rest as "Other"
+            const topBodyParts = sortedBodyParts.slice(0, 8);
+            const otherCount = sortedBodyParts.slice(8).reduce((sum, item) => sum + item[1], 0);
             
-            // Assign colors based on sorted order (largest gets first color)
-            const backgroundColors = sortedBodyParts.map((_, index) => 
-                pieChartColors[index % pieChartColors.length]
-            );
+            if (otherCount > 0) {
+                topBodyParts.push(['Other', otherCount]);
+            }
+            
+            const labels = topBodyParts.map(item => item[0]);
+            const counts = topBodyParts.map(item => item[1]);
+            
+            // Define a color palette for the pie chart
+            const colorPalette = [
+                'rgba(52, 152, 219, 0.7)',
+                'rgba(46, 204, 113, 0.7)',
+                'rgba(241, 196, 15, 0.7)',
+                'rgba(231, 76, 60, 0.7)',
+                'rgba(155, 89, 182, 0.7)',
+                'rgba(52, 73, 94, 0.7)',
+                'rgba(230, 126, 34, 0.7)',
+                'rgba(149, 165, 166, 0.7)',
+                'rgba(26, 188, 156, 0.7)'
+            ];
             
             bodyPartChart = new Chart(ctx, {
                 type: 'pie',
@@ -701,23 +672,16 @@
                     labels: labels,
                     datasets: [{
                         data: counts,
-                        backgroundColor: backgroundColors,
-                        borderColor: backgroundColors.map(color => color.replace('0.8', '1')),
+                        backgroundColor: colorPalette,
+                        borderColor: colorPalette.map(color => color.replace('0.7', '1')),
                         borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right',
-                            labels: {
-                                boxWidth: 12,
-                                font: {
-                                    size: 11
-                                }
-                            }
+                            position: 'right'
                         },
                         tooltip: {
                             callbacks: {
@@ -773,7 +737,7 @@
             
             // Sort by reject rate (descending) and take top 10
             const topRejectRates = rejectRates
-                .filter(item => item.total >= 3) // Only include body parts with at least 3 images
+                .filter(item => item.total >= 5) // Only include body parts with at least 5 images
                 .sort((a, b) => b.rejectRate - a.rejectRate)
                 .slice(0, 10);
             
@@ -798,7 +762,6 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             display: false
@@ -865,7 +828,7 @@
             
             // Sort by reject rate (descending)
             const sortedRejectRates = rejectRates
-                .filter(item => item.total >= 3) // Only include rooms with at least 3 images
+                .filter(item => item.total >= 5) // Only include rooms with at least 5 images
                 .sort((a, b) => b.rejectRate - a.rejectRate);
             
             const labels = sortedRejectRates.map(item => item.room);
@@ -889,7 +852,6 @@
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
                             display: false
@@ -941,34 +903,40 @@
             const labels = sortedReasons.map(item => item[0]);
             const counts = sortedReasons.map(item => item[1]);
             
-            // Assign colors based on sorted order (largest gets first color)
-            const backgroundColors = sortedReasons.map((_, index) => 
-                pieChartColors[index % pieChartColors.length]
-            );
-            
             rejectReasonChart = new Chart(ctx, {
                 type: 'pie',
                 data: {
                     labels: labels,
                     datasets: [{
                         data: counts,
-                        backgroundColor: backgroundColors,
-                        borderColor: backgroundColors.map(color => color.replace('0.8', '1')),
+                        backgroundColor: [
+                            'rgba(231, 76, 60, 0.7)',
+                            'rgba(241, 196, 15, 0.7)',
+                            'rgba(46, 204, 113, 0.7)',
+                            'rgba(52, 152, 219, 0.7)',
+                            'rgba(155, 89, 182, 0.7)',
+                            'rgba(52, 73, 94, 0.7)',
+                            'rgba(230, 126, 34, 0.7)',
+                            'rgba(149, 165, 166, 0.7)'
+                        ],
+                        borderColor: [
+                            'rgba(231, 76, 60, 1)',
+                            'rgba(241, 196, 15, 1)',
+                            'rgba(46, 204, 113, 1)',
+                            'rgba(52, 152, 219, 1)',
+                            'rgba(155, 89, 182, 1)',
+                            'rgba(52, 73, 94, 1)',
+                            'rgba(230, 126, 34, 1)',
+                            'rgba(149, 165, 166, 1)'
+                        ],
                         borderWidth: 1
                     }]
                 },
                 options: {
                     responsive: true,
-                    maintainAspectRatio: false,
                     plugins: {
                         legend: {
-                            position: 'right',
-                            labels: {
-                                boxWidth: 12,
-                                font: {
-                                    size: 11
-                                }
-                            }
+                            position: 'right'
                         },
                         tooltip: {
                             callbacks: {
