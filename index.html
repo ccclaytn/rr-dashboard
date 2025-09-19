@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RR Analysis</title>
+    <title>Reject Rate Analysis</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -31,6 +31,12 @@
         h2 {
             font-size: 18px;
             margin-top: 0;
+        }
+        h3 {
+            font-size: 16px;
+            color: #7f8c8d;
+            text-align: center;
+            margin-top: 20px;
         }
         .input-section {
             background-color: white;
@@ -82,6 +88,18 @@
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+        .placeholder-card {
+            flex: 1;
+            min-width: 280px;
+            background-color: #f8f9fa;
+            padding: 15px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px dashed #dee2e6;
+        }
         .error {
             color: #e74c3c;
             text-align: center;
@@ -117,14 +135,16 @@
         }
         .month-tab {
             padding: 8px 15px;
-            background-color: #e0e0e0;
+            background-color: 'rgba(52, 152, 219, 0.1)';
             cursor: pointer;
             border-radius: 4px;
             font-size: 13px;
+            border: 1px solid rgba(52, 152, 219, 0.2);
         }
         .month-tab.active {
             background-color: #3498db;
             color: white;
+            border-color: #3498db;
         }
         table {
             width: 100%;
@@ -176,22 +196,22 @@
             margin-top: 10px;
             font-size: 12px;
         }
+        .icon-large {
+            font-size: 48px;
+            color: #ced4da;
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>RR Analysis</h1>
+        <h1>Reject Rate Analysis</h1>
     </header>
 
     <div class="input-section">
         <h2>Enter Initials</h2>
-        <input type="text" id="techIdInput" placeholder="e.g., BYT" maxlength="5">
+        <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
-        
-        <div class="optimization-note">
-            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
-        </div>
-    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
@@ -226,11 +246,19 @@
             </div>
         </div>
 
-        <!-- New Room Reject Rate Section -->
+        <!-- New Room Reject Rate Section with Placeholder -->
         <div class="data-section">
             <div class="data-card">
                 <h2 id="roomRejectRateTitle">Reject Rate by Room</h2>
                 <canvas id="roomRejectRateChart"></canvas>
+            </div>
+            
+            <div class="placeholder-card">
+                <div>
+                    <div class="icon-large">📊</div>
+                    <h3>Additional Metrics</h3>
+                    <p>Future visualization will be displayed here</p>
+                </div>
             </div>
         </div>
 
@@ -952,33 +980,4 @@
             tableHTML += '</tbody></table>';
             
             if (!hasData) {
-                tableHTML = '<div class="no-data">No reject data available for this month</div>';
-            }
-            
-            document.getElementById('rejectReasonTable').innerHTML = tableHTML;
-        }
-        
-        // Helper functions
-        function showError(message) {
-            errorMessage.textContent = message;
-            errorMessage.style.display = 'block';
-        }
-        
-        function hideError() {
-            errorMessage.style.display = 'none';
-        }
-        
-        function showLoading() {
-            loadingIndicator.style.display = 'block';
-        }
-        
-        function hideLoading() {
-            loadingIndicator.style.display = 'none';
-        }
-        
-        function hideResults() {
-            resultsContainer.style.display = 'none';
-        }
-    </script>
-</body>
-</html>
+                tableHTML = '<div class
