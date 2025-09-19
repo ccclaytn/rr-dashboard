@@ -2,97 +2,97 @@
  {
   "Tech ID": "RAD1",
   "Body Part": "HIP",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "HIP",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "KNEE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "ABDOMEN",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "SHOULDER",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "SHOULDER",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "CHEST",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "WRIST",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "ELBOW",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "CHEST",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "FEMUR",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "FEMUR",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "ED P2\/3"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "CHEST",
-  "Reject Reason": "UNDER EXPOSED",
+  "Reject Category": "UNDER EXPOSED",
   "Room": "ED P2\/3"
  },
  {
@@ -1133,19 +1133,19 @@
  {
   "Tech ID": "RAD1",
   "Body Part": "FEMUR",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "L SPINE",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "RIBS",
-  "Reject Reason": "UNDER EXPOSED",
+  "Reject Category": "UNDER EXPOSED",
   "Room": "IP R6"
  },
  {
@@ -1371,25 +1371,25 @@
  {
   "Tech ID": "RAD1",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "CHEST",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "IP PORT"
  },
  {
@@ -2100,7 +2100,7 @@
  {
   "Tech ID": "RAD1",
   "Body Part": "PELVIS",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "ED PORT"
  },
  {
@@ -2121,31 +2121,31 @@
  {
   "Tech ID": "RAD1",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD1",
   "Body Part": "KNEE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R1"
  },
  {
@@ -2506,19 +2506,19 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "FOOT",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "ELBOW",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R2"
  },
  {
@@ -3039,7 +3039,7 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "ANKLE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP KR"
  },
  {
@@ -3120,7 +3120,7 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP KR"
  },
  {
@@ -3346,7 +3346,7 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "HIP",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP KR"
  },
  {
@@ -3427,31 +3427,31 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "HIP",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "HIP",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
@@ -3862,79 +3862,79 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
@@ -4010,19 +4010,19 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "L SPINE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "L SPINE",
-  "Reject Reason": "UNDER EXPOSED",
+  "Reject Category": "UNDER EXPOSED",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "L SPINE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP KR"
  },
  {
@@ -4138,7 +4138,7 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP KR"
  },
  {
@@ -4254,13 +4254,13 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "SHOULDER",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP KR"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP KR"
  },
  {
@@ -4356,7 +4356,7 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP KR"
  },
  {
@@ -4372,7 +4372,7 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "S I JOINTS",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP MC"
  },
  {
@@ -4718,31 +4718,31 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "L SPINE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "UCMI"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "UCMI"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "ABDOMEN",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "UCMI"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "PELVIS",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "UCMI"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "WRIST",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "UCMI"
  },
  {
@@ -5723,13 +5723,13 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "SCAPULA",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R5"
  },
  {
   "Tech ID": "RAD2",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R5"
  },
  {
@@ -5840,7 +5840,7 @@
  {
   "Tech ID": "RAD2",
   "Body Part": "TOES",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R1"
  },
  {
@@ -5996,37 +5996,37 @@
  {
   "Tech ID": "RAD3",
   "Body Part": "TIBIA FIBULA",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R6"
  },
  {
@@ -6087,415 +6087,415 @@
  {
   "Tech ID": "RAD3",
   "Body Part": "ANKLE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "HAND",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FINGERS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "HIP",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "L SPINE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SHOULDER",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "ANKLE",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "HIP",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "ARTEFACT",
+  "Reject Category": "ARTEFACT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "HIP",
-  "Reject Reason": "EQUIPMENT FAULT",
+  "Reject Category": "EQUIPMENT FAULT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "EQUIPMENT FAULT",
+  "Reject Category": "EQUIPMENT FAULT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "EQUIPMENT FAULT",
+  "Reject Category": "EQUIPMENT FAULT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "EQUIPMENT FAULT",
+  "Reject Category": "EQUIPMENT FAULT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "EQUIPMENT FAULT",
+  "Reject Category": "EQUIPMENT FAULT",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SHOULDER",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "ANKLE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "ANKLE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "ANKLE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "ANKLE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "HAND",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "HAND",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "HAND",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "CALCANEUM",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FEMUR",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FEMUR",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PATELLA",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "WRIST",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "WRIST",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R2"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "T SPINE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R2"
  },
  {
@@ -11166,25 +11166,25 @@
  {
   "Tech ID": "RAD3",
   "Body Part": "ELBOW",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "UCMI"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "UCMI"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "UCMI"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FOOT",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "UCMI"
  },
  {
@@ -11385,205 +11385,205 @@
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FEMUR",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FEMUR",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FEMUR",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "FEMUR",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PELVIS",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PATELLA",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "PATELLA",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "ABDOMEN",
-  "Reject Reason": "EQUIPMENT FAULT",
+  "Reject Category": "EQUIPMENT FAULT",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SCOLIOSIS",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SCOLIOSIS",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SCOLIOSIS",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SCOLIOSIS",
-  "Reject Reason": "PATIENT MOTION",
+  "Reject Category": "PATIENT MOTION",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SCAPHOID",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SHOULDER",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "SHOULDER",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "UNDER EXPOSED",
+  "Reject Category": "UNDER EXPOSED",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "UNDER EXPOSED",
+  "Reject Category": "UNDER EXPOSED",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "UNDER EXPOSED",
+  "Reject Category": "UNDER EXPOSED",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "STITCHING",
-  "Reject Reason": "UNDER EXPOSED",
+  "Reject Category": "UNDER EXPOSED",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R1"
  },
  {
   "Tech ID": "RAD3",
   "Body Part": "KNEE",
-  "Reject Reason": "WRONG DETECTOR",
+  "Reject Category": "WRONG DETECTOR",
   "Room": "OP R1"
  },
  {
@@ -14584,13 +14584,13 @@
  {
   "Tech ID": "RAD4",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP R6"
  },
  {
   "Tech ID": "RAD4",
   "Body Part": "KNEE",
-  "Reject Reason": "POSITIONING TECHNIQUE",
+  "Reject Category": "POSITIONING TECHNIQUE",
   "Room": "IP R6"
  },
  {
@@ -14806,37 +14806,37 @@
  {
   "Tech ID": "RAD4",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD4",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD4",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD4",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD4",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
   "Tech ID": "RAD4",
   "Body Part": "CHEST",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP PORT"
  },
  {
@@ -15257,7 +15257,7 @@
  {
   "Tech ID": "RAD4",
   "Body Part": "KNEE",
-  "Reject Reason": "ANATOMY CUT-OFF",
+  "Reject Category": "ANATOMY CUT-OFF",
   "Room": "IP R5"
  },
  {
