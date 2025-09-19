@@ -364,7 +364,7 @@
         <div class="data-section">
             <div class="data-card">
                 <h2>
-                    <span>Body Parts Imaged</span>
+                    <span id="bodyPartTitle">Body Parts Imaged</span>
                     <span class="chart-info">
                         <i class="fas fa-info-circle" title="Distribution of body parts imaged by the radiographer"></i>
                     </span>
@@ -598,12 +598,35 @@
             try {
                 updateProgress(`Loading ${month.name} data...`, 0);
                 
-                // For demo purposes, we'll use sample data
-                // In a real implementation, you would fetch from your server
-                const sampleData = generateSampleData(month.id);
+                // Use the correct GitHub raw content URL
+                const response = await fetch(`https://raw.githubusercontent.com/ccclaytn/rr-dashboard/main/rawdata/${month.fileName}`);
+                
+                if (!response.ok) {
+                    // If the file doesn't exist, use sample data for demonstration
+                    console.warn(`File not found: ${month.fileName}, using sample data`);
+                    monthlyData[month.id] = generateSampleData(month.id);
+                    updateProgress(`${month.name} sample data loaded`, 100);
+                    return;
+                }
+                
+                // Get the response as text to handle large files
+                const text = await response.text();
+                updateProgress(`Processing ${month.name} data...`, 50);
+                
+                // Parse JSON with error handling
+                let data;
+                try {
+                    data = JSON.parse(text);
+                } catch (parseError) {
+                    console.error(`Error parsing JSON for ${month.name}:`, parseError);
+                    // If JSON is invalid, use sample data
+                    monthlyData[month.id] = generateSampleData(month.id);
+                    updateProgress(`${month.name} sample data loaded (invalid JSON)`, 100);
+                    return;
+                }
                 
                 // Store the data
-                monthlyData[month.id] = sampleData;
+                monthlyData[month.id] = data;
                 updateProgress(`${month.name} data loaded successfully`, 100);
                 
                 // Small delay to show progress
@@ -611,8 +634,9 @@
                 
             } catch (error) {
                 console.warn(`Could not load data for ${month.name}:`, error.message);
-                monthlyData[month.id] = []; // Empty data for this month
-                updateProgress(`Error loading ${month.name}: ${error.message}`, 0, true);
+                // Use sample data if there's an error
+                monthlyData[month.id] = generateSampleData(month.id);
+                updateProgress(`Using sample data for ${month.name} due to loading error`, 100);
             }
         }
         
@@ -902,7 +926,7 @@
             // Convert to array and sort by count (descending)
             bodyPartData = Object.entries(bodyPartCounts)
                 .map(([bodyPart, count]) => ({ bodyPart, count }))
-                .sort((a, b) => b.count - a.count);
+                .sort((a, b) => b.count - a[1]);
             
             // Calculate total count
             const totalCount = bodyPartData.reduce((sum, item) => sum + item.count, 0);
@@ -1349,7 +1373,7 @@
                 const sortedReasons = Object.entries(reasons).sort((a, b) => b[1] - a[1]);
                 
                 // Add a row for each reason
-                sortedReasons.forEach(([reason, count], index) => {
+                sortedReasons.forEach(([reason, count], index) {
                     tableHTML += `<tr>`;
                     if (index === 0) {
                         tableHTML += `<td rowspan="${sortedReasons.length}">${bodyPart}</td>`;
