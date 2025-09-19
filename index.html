@@ -82,6 +82,17 @@
             border-radius: 6px;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
+        /* NEW: Specific sizing for different chart types */
+        .data-card.body-part-card,
+        .data-card.room-card {
+            flex: 1 1 45%; /* Same size for body parts and room charts */
+            min-height: 350px; /* Set a minimum height */
+        }
+        .data-card.reject-rate-card,
+        .data-card.reject-reasons-card {
+            flex: 1 1 45%; /* Same size for reject rate and reject reasons charts */
+            min-height: 350px; /* Set a minimum height */
+        }
         .error {
             color: #e74c3c;
             text-align: center;
@@ -181,12 +192,18 @@
 <body>
     <header>
         <h1>RR Analysis</h1>
+        <p>Image reject rates and trends</p>
     </header>
 
     <div class="input-section">
         <h2>Enter Initials</h2>
         <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
+        
+        <div class="optimization-note">
+            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
+        </div>
+    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
@@ -210,12 +227,12 @@
         </div>
 
         <div class="data-section">
-            <div class="data-card">
+            <div class="data-card body-part-card">
                 <h2 id="bodyPartTitle">Body Parts Imaged</h2>
                 <canvas id="bodyPartChart"></canvas>
             </div>
             
-            <div class="data-card">
+            <div class="data-card reject-rate-card">
                 <h2 id="rejectRateTitle">Reject Rate by Body Part</h2>
                 <canvas id="rejectRateChart"></canvas>
             </div>
@@ -223,15 +240,13 @@
 
         <!-- New Room Reject Rate Section -->
         <div class="data-section">
-            <div class="data-card">
+            <div class="data-card room-card">
                 <h2 id="roomRejectRateTitle">Reject Rate by Room</h2>
                 <canvas id="roomRejectRateChart"></canvas>
             </div>
-        </div>
-
-        <!-- New Reject Reasons Count Section -->
-        <div class="data-section">
-            <div class="data-card">
+            
+            <!-- New Reject Reasons Count Section -->
+            <div class="data-card reject-reasons-card">
                 <h2 id="rejectReasonsTitle">Reject Reasons Count</h2>
                 <canvas id="rejectReasonsChart"></canvas>
             </div>
@@ -700,6 +715,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         tooltip: {
                             callbacks: {
@@ -786,6 +802,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -891,6 +908,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         tooltip: {
                             callbacks: {
@@ -957,6 +975,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     indexAxis: 'y', // Horizontal bars
                     scales: {
                         x: {
