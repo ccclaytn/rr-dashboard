@@ -628,7 +628,7 @@
             createRejectReasonTable(techData);
         }
         
-        // Create body part chart
+        // Create body part chart as a pie chart
         function createBodyPartChart(data) {
             const ctx = document.getElementById('bodyPartChart').getContext('2d');
             
@@ -645,21 +645,40 @@
             
             // Sort by count (descending)
             const sortedBodyParts = Object.entries(bodyPartCounts)
-                .sort((a, b) => b[1] - a[1])
-                .slice(0, 10); // Top 10 only
+                .sort((a, b) => b[1] - a[1]);
             
-            const labels = sortedBodyParts.map(item => item[0]);
-            const counts = sortedBodyParts.map(item => item[1]);
+            // Get top 8 and group the rest as "Other"
+            const topBodyParts = sortedBodyParts.slice(0, 8);
+            const otherCount = sortedBodyParts.slice(8).reduce((sum, item) => sum + item[1], 0);
+            
+            if (otherCount > 0) {
+                topBodyParts.push(['Other', otherCount]);
+            }
+            
+            const labels = topBodyParts.map(item => item[0]);
+            const counts = topBodyParts.map(item => item[1]);
+            
+            // Define a color palette for the pie chart
+            const colorPalette = [
+                'rgba(52, 152, 219, 0.7)',
+                'rgba(46, 204, 113, 0.7)',
+                'rgba(241, 196, 15, 0.7)',
+                'rgba(231, 76, 60, 0.7)',
+                'rgba(155, 89, 182, 0.7)',
+                'rgba(52, 73, 94, 0.7)',
+                'rgba(230, 126, 34, 0.7)',
+                'rgba(149, 165, 166, 0.7)',
+                'rgba(26, 188, 156, 0.7)'
+            ];
             
             bodyPartChart = new Chart(ctx, {
-                type: 'bar',
+                type: 'pie',
                 data: {
                     labels: labels,
                     datasets: [{
-                        label: 'Number of Images',
                         data: counts,
-                        backgroundColor: 'rgba(52, 152, 219, 0.7)',
-                        borderColor: 'rgba(52, 152, 219, 1)',
+                        backgroundColor: colorPalette,
+                        borderColor: colorPalette.map(color => color.replace('0.7', '1')),
                         borderWidth: 1
                     }]
                 },
@@ -667,15 +686,17 @@
                     responsive: true,
                     plugins: {
                         legend: {
-                            display: false
-                        }
-                    },
-                    scales: {
-                        y: {
-                            beginAtZero: true,
-                            title: {
-                                display: true,
-                                text: 'Number of Images'
+                            position: 'right'
+                        },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    const label = context.label || '';
+                                    const value = context.raw || 0;
+                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
+                                    const percentage = Math.round((value / total) * 100);
+                                    return `${label}: ${value} (${percentage}%)`;
+                                }
                             }
                         }
                     }
@@ -683,7 +704,7 @@
             });
         }
         
-        // Create reject rate by body part chart
+        // Create reject rate by body part chart with dynamic y-axis
         function createRejectRateChart(data) {
             const ctx = document.getElementById('rejectRateChart').getContext('2d');
             
@@ -728,6 +749,10 @@
             const labels = topRejectRates.map(item => item.bodyPart);
             const rates = topRejectRates.map(item => item.rejectRate);
             
+            // Calculate dynamic max value for y-axis (add 10% padding)
+            const maxRate = Math.max(...rates);
+            const yAxisMax = Math.min(100, Math.ceil(maxRate * 1.1));
+            
             rejectRateChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -759,7 +784,7 @@
                     scales: {
                         y: {
                             beginAtZero: true,
-                            max: 100,
+                            max: yAxisMax,
                             title: {
                                 display: true,
                                 text: 'Reject Rate (%)'
@@ -770,7 +795,7 @@
             });
         }
         
-        // Create reject rate by room chart
+        // Create reject rate by room chart with dynamic y-axis
         function createRejectRoomChart(data) {
             const ctx = document.getElementById('rejectRoomChart').getContext('2d');
             
@@ -814,6 +839,10 @@
             const labels = sortedRejectRates.map(item => item.room);
             const rates = sortedRejectRates.map(item => item.rejectRate);
             
+            // Calculate dynamic max value for y-axis (add 10% padding)
+            const maxRate = Math.max(...rates);
+            const yAxisMax = Math.min(100, Math.ceil(maxRate * 1.1));
+            
             rejectRoomChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -845,7 +874,7 @@
                     scales: {
                         y: {
                             beginAtZero: true,
-                            max: 100,
+                            max: yAxisMax,
                             title: {
                                 display: true,
                                 text: 'Reject Rate (%)'
