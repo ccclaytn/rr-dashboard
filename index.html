@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reject Rate Analysis</title>
+    <title>Radiographer Reject Rate Analysis</title>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
         body {
@@ -135,7 +135,7 @@
         }
         .month-tab {
             padding: 8px 15px;
-            background-color: 'rgba(52, 152, 219, 0.1)';
+            background-color: rgba(52, 152, 219, 0.1);
             cursor: pointer;
             border-radius: 4px;
             font-size: 13px;
@@ -146,20 +146,82 @@
             color: white;
             border-color: #3498db;
         }
-        table {
+        
+        /* Compact table styles */
+        .compact-table-container {
+            max-height: 400px;
+            overflow-y: auto;
+            margin-top: 10px;
+            border: 1px solid #e0e0e0;
+            border-radius: 4px;
+        }
+        
+        .compact-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 12px;
-            font-size: 13px;
+            font-size: 12px;
         }
-        th, td {
-            padding: 8px;
-            text-align: left;
-            border-bottom: 1px solid #ddd;
+        
+        .compact-table th {
+            background-color: #f5f7f9;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            padding: 6px 8px;
+            font-weight: 600;
+            border-bottom: 2px solid #ddd;
         }
-        th {
-            background-color: #f2f2f2;
+        
+        .compact-table td {
+            padding: 5px 8px;
+            border-bottom: 1px solid #eee;
         }
+        
+        .compact-table tr:last-child td {
+            border-bottom: none;
+        }
+        
+        .compact-table tr:hover {
+            background-color: #f8f9fa;
+        }
+        
+        .body-part-header {
+            background-color: #e8f4fd !important;
+            font-weight: bold;
+        }
+        
+        .reason-count {
+            text-align: right;
+            font-family: monospace;
+        }
+        
+        .percentage-cell {
+            text-align: right;
+            font-family: monospace;
+            color: #6c757d;
+            font-size: 11px;
+        }
+        
+        .compact-section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+        }
+        
+        .toggle-reasons {
+            font-size: 12px;
+            color: #3498db;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 4px 8px;
+        }
+        
+        .toggle-reasons:hover {
+            text-decoration: underline;
+        }
+        
         .no-data {
             text-align: center;
             padding: 15px;
@@ -205,13 +267,19 @@
 </head>
 <body>
     <header>
-        <h1>Reject Rate Analysis</h1>
+        <h1>Radiographer Reject Rate Analysis</h1>
+        <p>Analyze image reject rates and trends by radiographer</p>
     </header>
 
     <div class="input-section">
-        <h2>Enter Initials</h2>
-        <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
+        <h2>Enter Radiographer Initials</h2>
+        <input type="text" id="techIdInput" placeholder="e.g., AAJ" maxlength="3">
         <button id="fetchDataBtn">Fetch Data</button>
+        
+        <div class="optimization-note">
+            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
+        </div>
+    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
@@ -263,8 +331,15 @@
         </div>
 
         <div class="chart-container">
-            <h2 id="rejectReasonTitle">Reject Reasons by Body Part</h2>
-            <div id="rejectReasonTable"></div>
+            <div class="compact-section-header">
+                <h2 id="rejectReasonTitle">Reject Reasons by Body Part</h2>
+                <button class="toggle-reasons" id="toggleReasons">Show All</button>
+            </div>
+            <div class="compact-table-container">
+                <table class="compact-table" id="rejectReasonTable">
+                    <!-- Table will be generated here -->
+                </table>
+            </div>
         </div>
     </div>
 
@@ -742,7 +817,7 @@
                         }
                     }
                 }
-            });
+            };
         }
         
         // Create reject rate by body part chart
@@ -936,7 +1011,7 @@
             });
         }
         
-        // Create reject reason table
+        // Create reject reason table - COMPACT VERSION
         function createRejectReasonTable(data) {
             const bodyPartReasons = {};
             
@@ -947,37 +1022,105 @@
                     const reason = item['Reject Category'];
                     
                     if (!bodyPartReasons[bodyPart]) {
-                        bodyPartReasons[bodyPart] = {};
+                        bodyPartReasons[bodyPart] = { total: 0, reasons: {} };
                     }
                     
-                    bodyPartReasons[bodyPart][reason] = (bodyPartReasons[bodyPart][reason] || 0) + 1;
+                    bodyPartReasons[bodyPart].reasons[reason] = (bodyPartReasons[bodyPart].reasons[reason] || 0) + 1;
+                    bodyPartReasons[bodyPart].total += 1;
                 }
             });
             
+            // Convert to array and sort by total rejects (descending)
+            const bodyPartEntries = Object.entries(bodyPartReasons)
+                .sort((a, b) => b[1].total - a[1].total);
+            
             // Create HTML table
-            let tableHTML = '<table>';
-            tableHTML += '<thead><tr><th>Body Part</th><th>Reject Reason</th><th>Count</th></tr></thead>';
-            tableHTML += '<tbody>';
+            let tableHTML = '';
             
-            let hasData = false;
-            
-            for (const [bodyPart, reasons] of Object.entries(bodyPartReasons)) {
-                const reasonEntries = Object.entries(reasons).sort((a, b) => b[1] - a[1]);
+            if (bodyPartEntries.length === 0) {
+                tableHTML = '<tr><td colspan="4" class="no-data">No reject data available for this month</td></tr>';
+            } else {
+                // Add table headers
+                tableHTML = '<thead><tr><th>Body Part</th><th>Reject Reason</th><th class="reason-count">Count</th><th class="percentage-cell">%</th></tr></thead><tbody>';
                 
-                for (let i = 0; i < reasonEntries.length; i++) {
-                    const [reason, count] = reasonEntries[i];
-                    tableHTML += `<tr>`;
+                let showAll = false;
+                const toggleButton = document.getElementById('toggleReasons');
+                if (toggleButton) {
+                    showAll = toggleButton.textContent === 'Show Less';
+                }
+                
+                for (const [bodyPart, data] of bodyPartEntries) {
+                    const reasonEntries = Object.entries(data.reasons)
+                        .sort((a, b) => b[1] - a[1]);
                     
-                    if (i === 0) {
-                        tableHTML += `<td rowspan="${reasonEntries.length}">${bodyPart}</td>`;
+                    // Only show top 3 reasons initially, unless Show All is clicked
+                    const reasonsToShow = showAll ? reasonEntries : reasonEntries.slice(0, 3);
+                    
+                    for (let i = 0; i < reasonsToShow.length; i++) {
+                        const [reason, count] = reasonsToShow[i];
+                        const percentage = ((count / data.total) * 100).toFixed(1);
+                        
+                        tableHTML += `<tr>`;
+                        
+                        if (i === 0) {
+                            const rowspan = showAll ? reasonEntries.length : Math.min(3, reasonEntries.length);
+                            tableHTML += `<td rowspan="${rowspan}" class="body-part-header">${bodyPart}</td>`;
+                        }
+                        
+                        tableHTML += `<td>${reason}</td>`;
+                        tableHTML += `<td class="reason-count">${count}</td>`;
+                        tableHTML += `<td class="percentage-cell">${percentage}%</td>`;
+                        tableHTML += `</tr>`;
                     }
                     
-                    tableHTML += `<td>${reason}</td><td>${count}</td></tr>`;
-                    hasData = true;
+                    // Add "X more reasons" row if not showing all and there are more than 3 reasons
+                    if (!showAll && reasonEntries.length > 3) {
+                        tableHTML += `<tr><td colspan="4" style="text-align: center; font-style: italic; color: #6c757d; font-size: 11px;">
+                            ${reasonEntries.length - 3} more reasons... 
+                        </td></tr>`;
+                    }
                 }
+                
+                tableHTML += '</tbody>';
             }
             
-            tableHTML += '</tbody></table>';
+            document.getElementById('rejectReasonTable').innerHTML = tableHTML;
             
-            if (!hasData) {
-                tableHTML = '<div class
+            // Add event listener to toggle button
+            const toggleButton = document.getElementById('toggleReasons');
+            if (toggleButton) {
+                toggleButton.onclick = function() {
+                    if (this.textContent === 'Show All') {
+                        this.textContent = 'Show Less';
+                    } else {
+                        this.textContent = 'Show All';
+                    }
+                    createRejectReasonTable(data); // Re-render the table
+                };
+            }
+        }
+        
+        // Helper functions
+        function showError(message) {
+            errorMessage.textContent = message;
+            errorMessage.style.display = 'block';
+        }
+        
+        function hideError() {
+            errorMessage.style.display = 'none';
+        }
+        
+        function showLoading() {
+            loadingIndicator.style.display = 'block';
+        }
+        
+        function hideLoading() {
+            loadingIndicator.style.display = 'none';
+        }
+        
+        function hideResults() {
+            resultsContainer.style.display = 'none';
+        }
+    </script>
+</body>
+</html>
