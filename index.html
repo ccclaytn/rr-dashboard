@@ -184,14 +184,9 @@
     </header>
 
     <div class="input-section">
-        <h2>Enter Radiographer Initials</h2>
+        <h2>Enter Initials</h2>
         <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
-        
-        <div class="optimization-note">
-            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
-        </div>
-    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
@@ -234,6 +229,14 @@
             </div>
         </div>
 
+        <!-- New Reject Reasons Count Section -->
+        <div class="data-section">
+            <div class="data-card">
+                <h2 id="rejectReasonsTitle">Reject Reasons Count</h2>
+                <canvas id="rejectReasonsChart"></canvas>
+            </div>
+        </div>
+
         <div class="chart-container">
             <h2 id="rejectReasonTitle">Reject Reasons by Body Part</h2>
             <div id="rejectReasonTable"></div>
@@ -266,6 +269,7 @@
         const bodyPartTitle = document.getElementById('bodyPartTitle');
         const rejectRateTitle = document.getElementById('rejectRateTitle');
         const roomRejectRateTitle = document.getElementById('roomRejectRateTitle');
+        const rejectReasonsTitle = document.getElementById('rejectReasonsTitle');
         const rejectReasonTitle = document.getElementById('rejectReasonTitle');
         const trendLegend = document.getElementById('trendLegend');
         
@@ -274,6 +278,7 @@
         let bodyPartChart = null;
         let rejectRateChart = null;
         let roomRejectRateChart = null;
+        let rejectReasonsChart = null;
 
         // Event listeners
         fetchDataBtn.addEventListener('click', fetchData);
@@ -592,12 +597,14 @@
             bodyPartTitle.textContent = `Body Parts Imaged - ${monthName}`;
             rejectRateTitle.textContent = `Reject Rate by Body Part - ${monthName}`;
             roomRejectRateTitle.textContent = `Reject Rate by Room - ${monthName}`;
+            rejectReasonsTitle.textContent = `Reject Reasons Count - ${monthName}`;
             rejectReasonTitle.textContent = `Reject Reasons by Body Part - ${monthName}`;
             
             if (monthData.length === 0) {
                 document.getElementById('bodyPartChart').style.display = 'none';
                 document.getElementById('rejectRateChart').style.display = 'none';
                 document.getElementById('roomRejectRateChart').style.display = 'none';
+                document.getElementById('rejectReasonsChart').style.display = 'none';
                 document.getElementById('rejectReasonTable').innerHTML = '<div class="no-data">No data available for this month</div>';
                 return;
             }
@@ -605,6 +612,7 @@
             document.getElementById('bodyPartChart').style.display = 'block';
             document.getElementById('rejectRateChart').style.display = 'block';
             document.getElementById('roomRejectRateChart').style.display = 'block';
+            document.getElementById('rejectReasonsChart').style.display = 'block';
             
             // Create body part chart
             createBodyPartChart(monthData);
@@ -614,6 +622,9 @@
             
             // Create room reject rate chart
             createRoomRejectRateChart(monthData);
+            
+            // Create reject reasons count chart
+            createRejectReasonsChart(monthData);
             
             // Create reject reason table
             createRejectReasonTable(monthData);
@@ -900,6 +911,67 @@
                                 boxWidth: 15,
                                 font: {
                                     size: 11
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+        
+        // Create reject reasons count chart
+        function createRejectReasonsChart(data) {
+            const rejectReasons = {};
+            
+            // Count reject reasons
+            data.forEach(item => {
+                if (item['Reject Category'] && item['Reject Category'].trim() !== '') {
+                    const reason = item['Reject Category'];
+                    rejectReasons[reason] = (rejectReasons[reason] || 0) + 1;
+                }
+            });
+            
+            // Sort by count descending and take top 10
+            const sortedReasons = Object.entries(rejectReasons)
+                .map(([reason, count]) => ({ reason, count }))
+                .sort((a, b) => b.count - a.count)
+                .slice(0, 10);
+            
+            const ctx = document.getElementById('rejectReasonsChart').getContext('2d');
+            
+            if (rejectReasonsChart) {
+                rejectReasonsChart.destroy();
+            }
+            
+            rejectReasonsChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: sortedReasons.map(item => item.reason),
+                    datasets: [{
+                        label: 'Count',
+                        data: sortedReasons.map(item => item.count),
+                        backgroundColor: 'rgba(231, 76, 60, 0.7)',
+                        borderColor: 'rgba(231, 76, 60, 1)',
+                        borderWidth: 1
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    indexAxis: 'y', // Horizontal bars
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            title: {
+                                display: true,
+                                text: 'Count'
+                            }
+                        }
+                    },
+                    plugins: {
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return `Count: ${context.parsed.x}`;
                                 }
                             }
                         }
