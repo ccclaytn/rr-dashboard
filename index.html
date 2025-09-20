@@ -150,7 +150,7 @@
             display: flex;
             align-items: center;
             margin-right: 12px;
-            font-size: 10px;
+            font-size: 13px;
         }
         .legend-color {
             width: 12px;
@@ -176,19 +176,80 @@
             margin-top: 10px;
             font-size: 12px;
         }
+        
+        /* Chart canvas containers */
+        .chart-wrapper {
+            position: relative;
+            height: 300px;
+            width: 100%;
+        }
+        
+        /* Mobile responsiveness */
+        @media (max-width: 768px) {
+            .data-card {
+                min-width: 100%;
+            }
+            
+            .data-section {
+                flex-direction: column;
+            }
+            
+            .chart-wrapper {
+                height: 250px;
+            }
+            
+            .month-tabs {
+                overflow-x: auto;
+                white-space: nowrap;
+                display: block;
+                padding-bottom: 5px;
+            }
+            
+            .month-tab {
+                display: inline-block;
+                margin-bottom: 5px;
+            }
+            
+            input, button {
+                margin-bottom: 10px;
+                width: 80%;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .chart-wrapper {
+                height: 220px;
+            }
+            
+            h2 {
+                font-size: 16px;
+            }
+            
+            body {
+                padding: 10px;
+            }
+            
+            .data-card, .chart-container {
+                padding: 10px;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>RR Analysis</h1>
-        <p>Image reject rates and trends</p>
+        <h1>Radiographer Reject Rate Analysis</h1>
+        <p>Analyze image reject rates and trends by radiographer</p>
     </header>
 
     <div class="input-section">
-        <h2>Enter Initials</h2>
+        <h2>Enter Radiographer Initials</h2>
         <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
         
+        <div class="optimization-note">
+            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
+        </div>
+    </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
 
@@ -203,7 +264,9 @@
     <div id="resultsContainer" style="display: none;">
         <div class="chart-container">
             <h2>Reject Rate Trend</h2>
-            <canvas id="trendChart"></canvas>
+            <div class="chart-wrapper">
+                <canvas id="trendChart"></canvas>
+            </div>
             <div class="chart-legend" id="trendLegend"></div>
         </div>
 
@@ -214,12 +277,16 @@
         <div class="data-section">
             <div class="data-card">
                 <h2 id="bodyPartTitle">Body Parts Imaged</h2>
-                <canvas id="bodyPartChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="bodyPartChart"></canvas>
+                </div>
             </div>
             
             <div class="data-card">
                 <h2 id="rejectRateTitle">Reject Rate by Body Part</h2>
-                <canvas id="rejectRateChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="rejectRateChart"></canvas>
+                </div>
             </div>
         </div>
 
@@ -227,12 +294,16 @@
         <div class="data-section">
             <div class="data-card">
                 <h2 id="roomRejectRateTitle">Reject Rate by Room</h2>
-                <canvas id="roomRejectRateChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="roomRejectRateChart"></canvas>
+                </div>
             </div>
             
             <div class="data-card">
                 <h2 id="rejectReasonsTitle">Reject Reasons Count</h2>
-                <canvas id="rejectReasonsChart"></canvas>
+                <div class="chart-wrapper">
+                    <canvas id="rejectReasonsChart"></canvas>
+                </div>
             </div>
         </div>
 
@@ -461,6 +532,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     interaction: {
                         mode: 'index',
                         intersect: false,
@@ -660,6 +732,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         tooltip: {
                             callbacks: {
@@ -743,6 +816,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     scales: {
                         y: {
                             beginAtZero: true,
@@ -814,7 +888,7 @@
                     'rgba(241, 196, 15, 0.7)',
                     'rgba(230, 126, 34, 0.7)',
                     'rgba(231, 76, 60, 0.7)',
-                    'rgba(149, 165, 166, 0.7)',
+                    'rgba(149, 165, 166, 极市)',
                     'rgba(26, 188, 156, 0.7)',
                     'rgba(241, 148, 138, 0.7)',
                     'rgba(174, 168, 211, 0.7)'
@@ -842,6 +916,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     plugins: {
                         tooltip: {
                             callbacks: {
@@ -906,6 +981,7 @@
                 },
                 options: {
                     responsive: true,
+                    maintainAspectRatio: false,
                     indexAxis: 'y',
                     scales: {
                         x: {
