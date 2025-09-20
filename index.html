@@ -237,18 +237,15 @@
 </head>
 <body>
     <header>
-        <h1>Radiographer Reject Rate Analysis</h1>
-        <p>Analyze image reject rates and trends by radiographer</p>
+        <h1>RR Analysis</h1>
+        <p>Image reject rate trends</p>
     </header>
 
     <div class="input-section">
-        <h2>Enter Radiographer Initials</h2>
+        <h2>Enter Initials</h2>
         <input type="text" id="techIdInput" placeholder="e.g., RAD1" maxlength="5">
         <button id="fetchDataBtn">Fetch Data</button>
         
-        <div class="optimization-note">
-            <strong>Note:</strong> For large JSON files, data is processed in chunks to prevent browser freezing.
-        </div>
     </div>
 
     <div id="errorMessage" class="error" style="display: none;"></div>
