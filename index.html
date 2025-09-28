@@ -235,10 +235,10 @@
             100% { transform: translateX(100%); }
         }
 
-        /* Confetti Animation */
+        /* Confetti Animation - Exploding from Bottom */
         .confetti-container {
             position: fixed;
-            top: 0;
+            bottom: 0;
             left: 0;
             width: 100%;
             height: 100%;
@@ -249,37 +249,73 @@
         
         .confetti {
             position: absolute;
-            width: 10px;
-            height: 10px;
-            animation: confetti-fall 3s linear forwards;
+            width: 12px;
+            height: 12px;
+            bottom: 0;
+            animation: confetti-explode 3s ease-out forwards;
+            border-radius: 2px;
         }
         
-        @keyframes confetti-fall {
+        /* Different shapes for variety */
+        .confetti:nth-child(3n) {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%; /* Circles */
+        }
+        
+        .confetti:nth-child(5n) {
+            width: 15px;
+            height: 5px;
+            border-radius: 1px; /* Rectangles */
+        }
+        
+        @keyframes confetti-explode {
             0% {
-                transform: translateY(-100vh) rotate(0deg);
+                transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+                opacity: 1;
+            }
+            20% {
                 opacity: 1;
             }
             100% {
-                transform: translateY(100vh) rotate(720deg);
+                transform: translateY(-100vh) translateX(var(--random-x)) rotate(720deg) scale(0.5);
                 opacity: 0;
             }
         }
         
+        /* Varied animations for more natural explosion */
         .confetti:nth-child(odd) {
-            animation-duration: 3.5s;
+            animation-duration: 2.5s;
             animation-delay: 0.1s;
+            animation-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
         }
         
         .confetti:nth-child(even) {
-            animation-duration: 2.5s;
+            animation-duration: 3s;
             animation-delay: 0.2s;
+            animation-timing-function: cubic-bezier(0.3, 0, 0.7, 1);
         }
         
         .confetti:nth-child(3n) {
-            animation-duration: 4s;
+            animation-duration: 3.5s;
             animation-delay: 0.3s;
         }
-                
+        
+        .confetti:nth-child(7n) {
+            animation-name: confetti-explode-slow;
+            animation-duration: 4s;
+        }
+        
+        @keyframes confetti-explode-slow {
+            0% {
+                transform: translateY(0) translateX(0) rotate(0deg) scale(1);
+                opacity: 1;
+            }
+            100% {
+                transform: translateY(-120vh) translateX(var(--random-x)) rotate(360deg) scale(0.3);
+                opacity: 0;
+            }
+        }
         /* Error Messages */
         .error {
             background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
@@ -813,59 +849,45 @@
         }
 
         // Confetti animation function
-        function createConfetti() {
-            const confettiContainer = document.createElement('div');
-            confettiContainer.className = 'confetti-container';
-            document.body.appendChild(confettiContainer);
-        
-            const colors = ['#6366f1', '#8b5cf6', '#ec4899', '#f43f5e', '#f97316', '#fbbf24', '#10b981', '#06b6d4'];
-            const shapes = ['circle', 'square', 'triangle'];
-        
-            for (let i = 0; i < 50; i++) {
+        function createConfetti(particleCount = 150) {
+            const container = document.createElement('div');
+            container.className = 'confetti-container';
+            document.body.appendChild(container);
+            
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff', '#00ffff', '#ffa500'];
+            
+            for (let i = 0; i < particleCount; i++) {
                 const confetti = document.createElement('div');
                 confetti.className = 'confetti';
                 
+                // Random position along the bottom
+                const left = Math.random() * 100;
+                const randomX = (Math.random() - 0.5) * 200; // Random horizontal movement
+                
                 // Random color
                 const color = colors[Math.floor(Math.random() * colors.length)];
-                const shape = shapes[Math.floor(Math.random() * shapes.length)];
                 
-                // Set shape and color
-                if (shape === 'circle') {
-                    confetti.style.borderRadius = '50%';
-                    confetti.style.backgroundColor = color;
-                } else if (shape === 'square') {
-                    confetti.style.backgroundColor = color;
-                } else { // triangle
-                    confetti.style.width = '0';
-                    confetti.style.height = '0';
-                    confetti.style.borderLeft = '5px solid transparent';
-                    confetti.style.borderRight = '5px solid transparent';
-                    confetti.style.borderBottom = `10px solid ${color}`;
-                    confetti.style.backgroundColor = 'transparent';
-                }
-        
-                // Random position and size
-                confetti.style.left = Math.random() * 100 + '%';
-                confetti.style.animationDelay = Math.random() * 2 + 's';
+                // Apply styles
+                confetti.style.left = left + 'vw';
+                confetti.style.backgroundColor = color;
+                confetti.style.setProperty('--random-x', randomX + 'px');
                 
-                // Random size variation
-                const size = Math.random() * 8 + 6;
-                if (shape !== 'triangle') {
-                    confetti.style.width = size + 'px';
-                    confetti.style.height = size + 'px';
-                }
-        
-                confettiContainer.appendChild(confetti);
+                // Random rotation direction
+                const rotation = Math.random() > 0.5 ? 720 : -720;
+                confetti.style.setProperty('--random-rotation', rotation + 'deg');
+                
+                container.appendChild(confetti);
             }
-        
-            // Remove confetti container after animation completes
+            
+            // Clean up after animation
             setTimeout(() => {
-                if (confettiContainer.parentNode) {
-                    confettiContainer.parentNode.removeChild(confettiContainer);
-                }
-            }, 4500);
+                container.remove();
+            }, 4000);
         }
-                
+        
+        // Usage
+        createConfetti(200);
+                        
         // Calculate monthly stats
         function calculateMonthlyStats(data) {
             const totalImages = data.length;
