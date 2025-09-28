@@ -763,7 +763,7 @@
                 const progress = (index / availableMonths.length) * 100;
                 updateProgress(`Loading ${month.name}...`, progress);
                 
-                const response = await fetch(`/rawdata/${month.fileName}`);
+                const response = await fetch(`https://ccclaytn.github.io/rr-dashboard/rawdata/${month.fileName}`);
                 
                 if (!response.ok) {
                     throw new Error(`Failed to fetch ${month.fileName}`);
