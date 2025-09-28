@@ -238,7 +238,7 @@
         /* Confetti Animation */
         .confetti-container {
             position: fixed;
-            bottom: 0;
+            top: 0;
             left: 0;
             width: 100%;
             height: 100%;
@@ -254,13 +254,17 @@
             animation: confetti-fall 3s linear forwards;
         }
         
-        @keyframes confetti-fall {
+        @keyframes confetti-explode {
             0% {
-                transform: translateY(-100vh) rotate(0deg);
+                transform: translateY(0) translateX(0) rotate(0deg) scale(0);
+                opacity: 1;
+            }
+            10% {
+                transform: translateY(-20vh) translateX(var(--random-x)) rotate(90deg) scale(1);
                 opacity: 1;
             }
             100% {
-                transform: translateY(100vh) rotate(720deg);
+                transform: translateY(-100vh) translateX(calc(var(--random-x) * 2)) rotate(720deg) scale(0.5);
                 opacity: 0;
             }
         }
