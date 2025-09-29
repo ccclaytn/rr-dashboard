@@ -239,7 +239,7 @@
             100% { transform: translateX(100%); }
         }
 
-        /* Confetti Animation */
+       /* Confetti Animation */
         .confetti-container {
             position: fixed;
             top: 0;
@@ -253,37 +253,38 @@
         
         .confetti {
             position: absolute;
-            width: 10px;
-            height: 10px;
-            animation: confetti-fall 3s linear forwards;
+            width: 16px;
+            height: 16px;
+            animation: confetti-explode 4s ease-out forwards;
         }
         
-        @keyframes confetti-fall {
+        @keyframes confetti-explode {
             0% {
-                transform: translateY(-100vh) rotate(0deg);
                 opacity: 1;
+                transform: scale(1) rotate(0deg) translateX(0) translateY(0);
             }
             100% {
-                transform: translateY(100vh) rotate(720deg);
                 opacity: 0;
+                transform: scale(0.3) rotate(720deg) 
+                          translateX(calc(var(--final-x) - 50vw)) 
+                          translateY(calc(var(--final-y) - 50vh));
             }
         }
         
         .confetti:nth-child(odd) {
-            animation-duration: 2s;
+            animation-duration: 3s;
             animation-delay: 0.1s;
         }
         
         .confetti:nth-child(even) {
-            animation-duration: 2.5s;
+            animation-duration: 3.5s;
             animation-delay: 0.1s;
         }
         
         .confetti:nth-child(3n) {
-            animation-duration: 3s;
+            animation-duration: 4s;
             animation-delay: 0.1s;
         }
-                
         /* Error Messages */
         .error {
             background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
